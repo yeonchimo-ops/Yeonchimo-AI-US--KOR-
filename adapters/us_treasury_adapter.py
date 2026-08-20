@@ -4,6 +4,7 @@
 
 import os
 import sys
+import time
 from datetime import datetime, timezone
 
 import yfinance as yf
@@ -43,23 +44,30 @@ def fetch_us_treasury_yields():
     now = datetime.now(timezone.utc).isoformat()
     for t in TREASURIES:
         ticker = t["ticker"]
-        try:
-            h = yf.Ticker(ticker).history(period="10d")
-            h = h.dropna(subset=["Close"])
-            if len(h) < 2:
-                rows.append({"name": t["name"], "ticker": ticker, "status": "MISSING"})
-                continue
-            closes = [round(float(c), 3) for c in h["Close"]]
-            price = closes[-1]
-            change = round(price - closes[-2], 3)
-            change_pct = change  # 수익률 자체가 %이므로 diff가 곧 %p 변화
-            rows.append({
-                "name": t["name"], "ticker": ticker, "status": "ACTUAL",
-                "price": price, "change": change, "change_pct": change_pct,
-                "sparkline": closes, "as_of_bar": now, "source": "yfinance", "unit": "%",
-            })
-        except Exception as e:
-            rows.append({"name": t["name"], "ticker": ticker, "status": "MISSING", "error": str(e)})
+        last_error = None
+        for attempt in range(5):
+            if attempt:
+                time.sleep(5 * attempt)  # 직전 파이프라인의 대량 요청 직후 붙는 순간적 429 완화용 백오프
+            try:
+                h = yf.Ticker(ticker).history(period="10d")
+                h = h.dropna(subset=["Close"])
+                if len(h) < 2:
+                    last_error = "insufficient history rows"
+                    continue
+                closes = [round(float(c), 3) for c in h["Close"]]
+                price = closes[-1]
+                change = round(price - closes[-2], 3)
+                change_pct = change  # 수익률 자체가 %이므로 diff가 곧 %p 변화
+                rows.append({
+                    "name": t["name"], "ticker": ticker, "status": "ACTUAL",
+                    "price": price, "change": change, "change_pct": change_pct,
+                    "sparkline": closes, "as_of_bar": now, "source": "yfinance", "unit": "%",
+                })
+                break
+            except Exception as e:
+                last_error = str(e)
+        else:
+            rows.append({"name": t["name"], "ticker": ticker, "status": "MISSING", "error": last_error})
     return rows
 
 
