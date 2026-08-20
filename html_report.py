@@ -16,6 +16,7 @@ warnings.filterwarnings("ignore", category=DeprecationWarning)
 from adapters.us_adapter import fetch_us_major_indices
 from adapters.naver_world_adapter import fetch_us_major_indices_naver
 from adapters.naver_marketindex_adapter import fetch_market_index_snapshot, SECTION_LABELS
+from adapters.us_treasury_adapter import fetch_us_treasury_yields
 
 GEN_DIR = Path(__file__).parent / "data" / "generated"
 RUN_DIR = Path(__file__).parent / "data" / "prediction_runs"
@@ -238,6 +239,32 @@ def render_market_index_section():
     return f'<div class="mkt-wrap">{"".join(sections)}</div>'
 
 
+def render_treasury_row():
+    try:
+        rows = fetch_us_treasury_yields()
+    except Exception:
+        return ""
+
+    cards = []
+    for r in rows:
+        if r["status"] != "ACTUAL":
+            cards.append(f'<div class="index-card"><div class="index-name">{r["name"]}</div>'
+                         f'<div class="muted-cell">MISSING</div></div>')
+            continue
+        up = r["change"] >= 0
+        cls = "up" if up else "down"
+        arrow = "▲" if up else ("▼" if r["change"] < 0 else "")
+        cards.append(
+            f'<div class="index-card"><div class="index-name">{r["name"]}</div>'
+            f'<div class="index-price mono">{r["price"]:.3f}%</div>'
+            f'<div class="index-change mono {cls}">{arrow} {r["change"]:+.3f}%p</div>'
+            f'{render_sparkline_svg(r["sparkline"], up)}'
+            f'<div class="index-asof">최근 10거래일 · yfinance</div>'
+            f'</div>'
+        )
+    return f'<div class="mkt-title" style="margin:4px 0 8px;">미국국채 수익률</div><div class="index-row">{"".join(cards)}</div>'
+
+
 def fmt_pct(v):
     if v is None:
         return "-"
@@ -367,6 +394,8 @@ def build_html(trade_date):
 {render_index_row()}
 
 {render_market_index_section()}
+
+{render_treasury_row()}
 
 <div class="hero">
   <div class="hero-kospi">
