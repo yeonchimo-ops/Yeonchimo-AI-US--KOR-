@@ -3,11 +3,33 @@
 # 종가/등락률/거래량/평균거래량대비/거래금액을 가져오고, 시가총액은 종목별 fast_info로 보강한다.
 # PHASE 2는 "수집 adapter"만 대상이다 — 스코어 계산/스케줄러는 PHASE 3~4.
 
+import os
 import sys
 import warnings
 from datetime import datetime, timezone
 
 import yfinance as yf
+
+# yfinance 기본 백엔드(curl_cffi, 브라우저 TLS 지문 흉내)가 Claude Code 클라우드 루틴(CCR)의
+# 정책 프록시에서 TLS reset을 당해 매번 실패하는 걸 2026-08-20에 실제로 확인했다
+# ("curl: (35) Recv failure: Connection reset by peer"). 일반 requests는 같은 프록시를
+# 문제없이 통과하므로, 프록시가 감지되면(로컬 실행 시엔 감지 안 되어 영향 없음) yfinance가
+# 내부적으로 만드는 세션을 전부 일반 requests.Session()으로 강제한다.
+if os.environ.get("CCR_AGENT_PROXY_ENABLED") or os.environ.get("HTTPS_PROXY"):
+    try:
+        import requests
+        from yfinance import data as _yf_data
+
+        _ca_bundle = os.environ.get("REQUESTS_CA_BUNDLE") or os.environ.get("CURL_CA_BUNDLE") or True
+
+        def _proxy_friendly_session():
+            s = requests.Session()
+            s.verify = _ca_bundle
+            return s
+
+        _yf_data.new_session = _proxy_friendly_session
+    except Exception:
+        pass  # 패치 실패해도 원래 동작(에러)으로 넘어간다 — 침묵 실패로 데이터를 조작하지 않는다.
 
 warnings.filterwarnings("ignore", category=DeprecationWarning, module="yfinance")
 
