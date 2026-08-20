@@ -161,6 +161,31 @@ US_STOCK_NAMES = {
     "CRCL": ("Circle Internet Group Inc.", "EQUITY"),
 }
 
+US_STOCK_NAMES_KO = {
+    "NVDA": "엔비디아", "AAPL": "애플", "MSFT": "마이크로소프트", "GOOGL": "알파벳(구글)",
+    "AMZN": "아마존", "META": "메타 플랫폼스", "TSLA": "테슬라",
+    "SKHY": "SK하이닉스(ADR)", "MU": "마이크론 테크놀로지", "SNDK": "샌디스크", "MRVL": "마벨 테크놀로지",
+    "STX": "시게이트 테크놀로지", "TSM": "TSMC(ADR)", "AVGO": "브로드컴", "AMD": "AMD",
+    "INTC": "인텔", "TXN": "텍사스 인스트루먼트", "ASML": "ASML 홀딩(ADR)",
+    "GEV": "GE 버노바", "SMR": "뉴스케일 파워", "OKLO": "오클로", "CEG": "컨스텔레이션 에너지",
+    "URA": "Global X 우라늄 ETF",
+    "ENPH": "인페이즈 에너지", "TAN": "Invesco 솔라 ETF", "NEE": "넥스트에라 에너지", "FSLR": "퍼스트 솔라",
+    "GE": "제너럴 일렉트릭", "CWEN": "클리어웨이 에너지", "BEP": "브룩필드 리뉴어블 파트너스",
+    "LITE": "루멘텀 홀딩스", "COHR": "코히런트", "GLW": "코닝", "CIEN": "시에나",
+    "LMT": "록히드 마틴",
+    "SPCX": "스페이스X(표시값)", "RKLB": "로켓 랩", "ASTS": "AST 스페이스모바일",
+    "AIFF": "표시값(재검증 필요)", "FLY": "표시값(재검증 필요)", "LUNR": "인튜이티브 머신스", "PL": "플래닛 랩스",
+    "ALB": "알버말", "LAC": "리튬 아메리카스", "LIT": "Global X 리튬 ETF",
+    "BE": "블룸 에너지",
+    "MRNA": "모더나", "LLY": "일라이 릴리", "NVO": "노보 노디스크(ADR)", "PFE": "화이자",
+    "SOXL": "Direxion 반도체 불 3X", "SOXS": "Direxion 반도체 베어 3X",
+    "PLTR": "팔란티어 테크놀로지스", "ORCL": "오라클",
+    "IONQ": "아이온큐", "RGTI": "리게티 컴퓨팅", "QBTS": "D-웨이브 퀀텀",
+    "RIVN": "리비안", "LCID": "루시드 그룹",
+    "MSTR": "스트래티지(구 마이크로스트래티지)", "MARA": "마라 홀딩스", "COIN": "코인베이스",
+    "GLXY": "갤럭시 디지털", "CRCL": "서클 인터넷 그룹",
+}
+
 # 명세 3.2 — BTC/ETH는 17번 그룹 구성종목이 아니라 선택적 REFERENCE_INDICATOR.
 # 섹터 membership을 만들지 않고 참고지표 엔티티로만 별도 보관한다.
 REFERENCE_INDICATORS = [

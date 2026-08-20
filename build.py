@@ -38,6 +38,7 @@ def build_us_stocks():
         stocks.append({
             "ticker": ticker,
             "name": name,
+            "name_ko": master_data.US_STOCK_NAMES_KO.get(ticker, ticker),
             "asset_type": asset_type,
             "exchange": None,
             "is_active": True,

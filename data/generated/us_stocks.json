@@ -2,6 +2,7 @@
   {
     "ticker": "AAPL",
     "name": "Apple Inc.",
+    "name_ko": "애플",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -10,6 +11,7 @@
   {
     "ticker": "AIFF",
     "name": "표시값 보존 (재검증 필요)",
+    "name_ko": "표시값(재검증 필요)",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -18,6 +20,7 @@
   {
     "ticker": "ALB",
     "name": "Albemarle Corporation",
+    "name_ko": "알버말",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -26,6 +29,7 @@
   {
     "ticker": "AMD",
     "name": "Advanced Micro Devices Inc.",
+    "name_ko": "AMD",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -34,6 +38,7 @@
   {
     "ticker": "AMZN",
     "name": "Amazon.com Inc.",
+    "name_ko": "아마존",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -42,6 +47,7 @@
   {
     "ticker": "ASML",
     "name": "ASML Holding (ADR)",
+    "name_ko": "ASML 홀딩(ADR)",
     "asset_type": "ADR",
     "exchange": null,
     "is_active": true,
@@ -50,6 +56,7 @@
   {
     "ticker": "ASTS",
     "name": "AST SpaceMobile Inc.",
+    "name_ko": "AST 스페이스모바일",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -58,6 +65,7 @@
   {
     "ticker": "AVGO",
     "name": "Broadcom Inc.",
+    "name_ko": "브로드컴",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -66,6 +74,7 @@
   {
     "ticker": "BE",
     "name": "Bloom Energy Corporation",
+    "name_ko": "블룸 에너지",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -74,6 +83,7 @@
   {
     "ticker": "BEP",
     "name": "Brookfield Renewable Partners",
+    "name_ko": "브룩필드 리뉴어블 파트너스",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -82,6 +92,7 @@
   {
     "ticker": "CEG",
     "name": "Constellation Energy Corporation",
+    "name_ko": "컨스텔레이션 에너지",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -90,6 +101,7 @@
   {
     "ticker": "CIEN",
     "name": "Ciena Corporation",
+    "name_ko": "시에나",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -98,6 +110,7 @@
   {
     "ticker": "COHR",
     "name": "Coherent Corp.",
+    "name_ko": "코히런트",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -106,6 +119,7 @@
   {
     "ticker": "COIN",
     "name": "Coinbase Global Inc.",
+    "name_ko": "코인베이스",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -114,6 +128,7 @@
   {
     "ticker": "CRCL",
     "name": "Circle Internet Group Inc.",
+    "name_ko": "서클 인터넷 그룹",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -122,6 +137,7 @@
   {
     "ticker": "CWEN",
     "name": "Clearway Energy Inc.",
+    "name_ko": "클리어웨이 에너지",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -130,6 +146,7 @@
   {
     "ticker": "ENPH",
     "name": "Enphase Energy Inc.",
+    "name_ko": "인페이즈 에너지",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -138,6 +155,7 @@
   {
     "ticker": "FLY",
     "name": "표시값 보존 (재검증 필요)",
+    "name_ko": "표시값(재검증 필요)",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -146,6 +164,7 @@
   {
     "ticker": "FSLR",
     "name": "First Solar Inc.",
+    "name_ko": "퍼스트 솔라",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -154,6 +173,7 @@
   {
     "ticker": "GE",
     "name": "General Electric Company",
+    "name_ko": "제너럴 일렉트릭",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -162,6 +182,7 @@
   {
     "ticker": "GEV",
     "name": "GE Vernova Inc.",
+    "name_ko": "GE 버노바",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -170,6 +191,7 @@
   {
     "ticker": "GLW",
     "name": "Corning Incorporated",
+    "name_ko": "코닝",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -178,6 +200,7 @@
   {
     "ticker": "GLXY",
     "name": "Galaxy Digital Inc.",
+    "name_ko": "갤럭시 디지털",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -186,6 +209,7 @@
   {
     "ticker": "GOOGL",
     "name": "Alphabet Inc. Class A",
+    "name_ko": "알파벳(구글)",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -194,6 +218,7 @@
   {
     "ticker": "INTC",
     "name": "Intel Corporation",
+    "name_ko": "인텔",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -202,6 +227,7 @@
   {
     "ticker": "IONQ",
     "name": "IonQ Inc.",
+    "name_ko": "아이온큐",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -210,6 +236,7 @@
   {
     "ticker": "LAC",
     "name": "Lithium Americas Corp.",
+    "name_ko": "리튬 아메리카스",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -218,6 +245,7 @@
   {
     "ticker": "LCID",
     "name": "Lucid Group Inc.",
+    "name_ko": "루시드 그룹",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -226,6 +254,7 @@
   {
     "ticker": "LIT",
     "name": "Global X Lithium & Battery Tech ETF",
+    "name_ko": "Global X 리튬 ETF",
     "asset_type": "ETF",
     "exchange": null,
     "is_active": true,
@@ -234,6 +263,7 @@
   {
     "ticker": "LITE",
     "name": "Lumentum Holdings Inc.",
+    "name_ko": "루멘텀 홀딩스",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -242,6 +272,7 @@
   {
     "ticker": "LLY",
     "name": "Eli Lilly and Company",
+    "name_ko": "일라이 릴리",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -250,6 +281,7 @@
   {
     "ticker": "LMT",
     "name": "Lockheed Martin Corporation",
+    "name_ko": "록히드 마틴",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -258,6 +290,7 @@
   {
     "ticker": "LUNR",
     "name": "Intuitive Machines Inc.",
+    "name_ko": "인튜이티브 머신스",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -266,6 +299,7 @@
   {
     "ticker": "MARA",
     "name": "MARA Holdings Inc.",
+    "name_ko": "마라 홀딩스",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -274,6 +308,7 @@
   {
     "ticker": "META",
     "name": "Meta Platforms Inc.",
+    "name_ko": "메타 플랫폼스",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -282,6 +317,7 @@
   {
     "ticker": "MRNA",
     "name": "Moderna Inc.",
+    "name_ko": "모더나",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -290,6 +326,7 @@
   {
     "ticker": "MRVL",
     "name": "Marvell Technology Inc.",
+    "name_ko": "마벨 테크놀로지",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -298,6 +335,7 @@
   {
     "ticker": "MSFT",
     "name": "Microsoft Corporation",
+    "name_ko": "마이크로소프트",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -306,6 +344,7 @@
   {
     "ticker": "MSTR",
     "name": "Strategy Inc. (구 MicroStrategy)",
+    "name_ko": "스트래티지(구 마이크로스트래티지)",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -314,6 +353,7 @@
   {
     "ticker": "MU",
     "name": "Micron Technology Inc.",
+    "name_ko": "마이크론 테크놀로지",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -322,6 +362,7 @@
   {
     "ticker": "NEE",
     "name": "NextEra Energy Inc.",
+    "name_ko": "넥스트에라 에너지",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -330,6 +371,7 @@
   {
     "ticker": "NVDA",
     "name": "NVIDIA Corporation",
+    "name_ko": "엔비디아",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -338,6 +380,7 @@
   {
     "ticker": "NVO",
     "name": "Novo Nordisk (ADR)",
+    "name_ko": "노보 노디스크(ADR)",
     "asset_type": "ADR",
     "exchange": null,
     "is_active": true,
@@ -346,6 +389,7 @@
   {
     "ticker": "OKLO",
     "name": "Oklo Inc.",
+    "name_ko": "오클로",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -354,6 +398,7 @@
   {
     "ticker": "ORCL",
     "name": "Oracle Corporation",
+    "name_ko": "오라클",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -362,6 +407,7 @@
   {
     "ticker": "PFE",
     "name": "Pfizer Inc.",
+    "name_ko": "화이자",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -370,6 +416,7 @@
   {
     "ticker": "PL",
     "name": "Planet Labs PBC",
+    "name_ko": "플래닛 랩스",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -378,6 +425,7 @@
   {
     "ticker": "PLTR",
     "name": "Palantir Technologies Inc.",
+    "name_ko": "팔란티어 테크놀로지스",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -386,6 +434,7 @@
   {
     "ticker": "QBTS",
     "name": "D-Wave Quantum Inc.",
+    "name_ko": "D-웨이브 퀀텀",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -394,6 +443,7 @@
   {
     "ticker": "RGTI",
     "name": "Rigetti Computing Inc.",
+    "name_ko": "리게티 컴퓨팅",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -402,6 +452,7 @@
   {
     "ticker": "RIVN",
     "name": "Rivian Automotive Inc.",
+    "name_ko": "리비안",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -410,6 +461,7 @@
   {
     "ticker": "RKLB",
     "name": "Rocket Lab USA Inc.",
+    "name_ko": "로켓 랩",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -418,6 +470,7 @@
   {
     "ticker": "SKHY",
     "name": "SK hynix (ADR 표시값)",
+    "name_ko": "SK하이닉스(ADR)",
     "asset_type": "ADR",
     "exchange": null,
     "is_active": true,
@@ -426,6 +479,7 @@
   {
     "ticker": "SMR",
     "name": "NuScale Power Corporation",
+    "name_ko": "뉴스케일 파워",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -434,6 +488,7 @@
   {
     "ticker": "SNDK",
     "name": "SanDisk Corporation",
+    "name_ko": "샌디스크",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -442,6 +497,7 @@
   {
     "ticker": "SOXL",
     "name": "Direxion Daily Semiconductor Bull 3X Shares",
+    "name_ko": "Direxion 반도체 불 3X",
     "asset_type": "ETF",
     "exchange": null,
     "is_active": true,
@@ -450,6 +506,7 @@
   {
     "ticker": "SOXS",
     "name": "Direxion Daily Semiconductor Bear 3X Shares",
+    "name_ko": "Direxion 반도체 베어 3X",
     "asset_type": "ETF",
     "exchange": null,
     "is_active": true,
@@ -458,6 +515,7 @@
   {
     "ticker": "SPCX",
     "name": "SpaceX (표시값, 상장상태 재검증 필요)",
+    "name_ko": "스페이스X(표시값)",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -466,6 +524,7 @@
   {
     "ticker": "STX",
     "name": "Seagate Technology Holdings",
+    "name_ko": "시게이트 테크놀로지",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -474,6 +533,7 @@
   {
     "ticker": "TAN",
     "name": "Invesco Solar ETF",
+    "name_ko": "Invesco 솔라 ETF",
     "asset_type": "ETF",
     "exchange": null,
     "is_active": true,
@@ -482,6 +542,7 @@
   {
     "ticker": "TSLA",
     "name": "Tesla Inc.",
+    "name_ko": "테슬라",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -490,6 +551,7 @@
   {
     "ticker": "TSM",
     "name": "Taiwan Semiconductor Manufacturing (ADR)",
+    "name_ko": "TSMC(ADR)",
     "asset_type": "ADR",
     "exchange": null,
     "is_active": true,
@@ -498,6 +560,7 @@
   {
     "ticker": "TXN",
     "name": "Texas Instruments Inc.",
+    "name_ko": "텍사스 인스트루먼트",
     "asset_type": "EQUITY",
     "exchange": null,
     "is_active": true,
@@ -506,6 +569,7 @@
   {
     "ticker": "URA",
     "name": "Global X Uranium ETF",
+    "name_ko": "Global X 우라늄 ETF",
     "asset_type": "ETF",
     "exchange": null,
     "is_active": true,
