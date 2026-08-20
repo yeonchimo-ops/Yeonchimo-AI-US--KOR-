@@ -1,0 +1,424 @@
+{
+  "prediction_run": {
+    "id": "RUN_20260820_182540902646Z",
+    "trade_date": "20260820",
+    "generated_at": "2026-08-20T18:25:40.902673+00:00",
+    "mapping_version": "1.0.0",
+    "model_version": "phase3-us-sector-score-v1",
+    "input_cutoff": "2026-08-20T18:25:05.759169+00:00",
+    "status": "IMMUTABLE"
+  },
+  "us_sector_score_records": [
+    {
+      "prediction_run_id": "RUN_20260820_182540902646Z",
+      "entity_type": "US_MASTER_SECTOR",
+      "entity_id": "US_01_M7",
+      "score_type": "US_SECTOR",
+      "score": 38.7,
+      "rank": 9,
+      "components": {
+        "return_strength": 62.5,
+        "traded_value_strength": 18.75,
+        "breadth": 0.0,
+        "core_leadership": 73.33,
+        "catalyst": null
+      },
+      "components_raw": {
+        "return_strength_raw": -0.9635549773694033,
+        "traded_value_strength_raw": 0.3767142857142858,
+        "breadth_pct": 0.0,
+        "core_leadership_return_pct": -0.3252,
+        "catalyst": null
+      },
+      "data_quality": "PARTIAL"
+    },
+    {
+      "prediction_run_id": "RUN_20260820_182540902646Z",
+      "entity_type": "US_MASTER_SECTOR",
+      "entity_id": "US_02_SEMICONDUCTOR",
+      "score_type": "US_SECTOR",
+      "score": 67.85,
+      "rank": 3,
+      "components": {
+        "return_strength": 93.75,
+        "traded_value_strength": 31.25,
+        "breadth": 63.63636363636363,
+        "core_leadership": 93.33,
+        "catalyst": null
+      },
+      "components_raw": {
+        "return_strength_raw": 0.8961431802623316,
+        "traded_value_strength_raw": 0.47881818181818175,
+        "breadth_pct": 63.63636363636363,
+        "core_leadership_return_pct": 0.7413,
+        "catalyst": null
+      },
+      "data_quality": "PARTIAL"
+    },
+    {
+      "prediction_run_id": "RUN_20260820_182540902646Z",
+      "entity_type": "US_MASTER_SECTOR",
+      "entity_id": "US_03_POWER_EQUIPMENT",
+      "score_type": "US_SECTOR",
+      "score": 33.43,
+      "rank": 13,
+      "components": {
+        "return_strength": 12.5,
+        "traded_value_strength": 81.25,
+        "breadth": 0.0,
+        "core_leadership": 13.33,
+        "catalyst": null
+      },
+      "components_raw": {
+        "return_strength_raw": -3.8189,
+        "traded_value_strength_raw": 0.612,
+        "breadth_pct": 0.0,
+        "core_leadership_return_pct": -3.8189,
+        "catalyst": null
+      },
+      "data_quality": "PARTIAL"
+    },
+    {
+      "prediction_run_id": "RUN_20260820_182540902646Z",
+      "entity_type": "US_MASTER_SECTOR",
+      "entity_id": "US_04_NUCLEAR_SMR",
+      "score_type": "US_SECTOR",
+      "score": 40.69,
+      "rank": 8,
+      "components": {
+        "return_strength": 50.0,
+        "traded_value_strength": 43.75,
+        "breadth": 0.0,
+        "core_leadership": 60.0,
+        "catalyst": null
+      },
+      "components_raw": {
+        "return_strength_raw": -1.2600713131945322,
+        "traded_value_strength_raw": 0.5,
+        "breadth_pct": 0.0,
+        "core_leadership_return_pct": -0.8608,
+        "catalyst": null
+      },
+      "data_quality": "PARTIAL"
+    },
+    {
+      "prediction_run_id": "RUN_20260820_182540902646Z",
+      "entity_type": "US_MASTER_SECTOR",
+      "entity_id": "US_05_SOLAR",
+      "score_type": "US_SECTOR",
+      "score": 33.45,
+      "rank": 12,
+      "components": {
+        "return_strength": 56.25,
+        "traded_value_strength": 12.5,
+        "breadth": 0.0,
+        "core_leadership": 66.67,
+        "catalyst": null
+      },
+      "components_raw": {
+        "return_strength_raw": -1.0166242762737339,
+        "traded_value_strength_raw": 0.34450000000000003,
+        "breadth_pct": 0.0,
+        "core_leadership_return_pct": -0.7391,
+        "catalyst": null
+      },
+      "data_quality": "PARTIAL"
+    },
+    {
+      "prediction_run_id": "RUN_20260820_182540902646Z",
+      "entity_type": "US_MASTER_SECTOR",
+      "entity_id": "US_06_WIND",
+      "score_type": "US_SECTOR",
+      "score": 32.48,
+      "rank": 14,
+      "components": {
+        "return_strength": 43.75,
+        "traded_value_strength": 37.5,
+        "breadth": 0.0,
+        "core_leadership": 26.67,
+        "catalyst": null
+      },
+      "components_raw": {
+        "return_strength_raw": -2.270652944603414,
+        "traded_value_strength_raw": 0.48050000000000004,
+        "breadth_pct": 0.0,
+        "core_leadership_return_pct": -3.0318,
+        "catalyst": null
+      },
+      "data_quality": "PARTIAL"
+    },
+    {
+      "prediction_run_id": "RUN_20260820_182540902646Z",
+      "entity_type": "US_MASTER_SECTOR",
+      "entity_id": "US_07_OPTICAL",
+      "score_type": "US_SECTOR",
+      "score": 50.02,
+      "rank": 7,
+      "components": {
+        "return_strength": 81.25,
+        "traded_value_strength": 25.0,
+        "breadth": 25.0,
+        "core_leadership": 53.33,
+        "catalyst": null
+      },
+      "components_raw": {
+        "return_strength_raw": 0.30584000902850816,
+        "traded_value_strength_raw": 0.39725000000000005,
+        "breadth_pct": 25.0,
+        "core_leadership_return_pct": -0.9412,
+        "catalyst": null
+      },
+      "data_quality": "PARTIAL"
+    },
+    {
+      "prediction_run_id": "RUN_20260820_182540902646Z",
+      "entity_type": "US_MASTER_SECTOR",
+      "entity_id": "US_08_DEFENSE",
+      "score_type": "US_SECTOR",
+      "score": 38.43,
+      "rank": 10,
+      "components": {
+        "return_strength": 25.0,
+        "traded_value_strength": 75.0,
+        "breadth": 0.0,
+        "core_leadership": 33.33,
+        "catalyst": null
+      },
+      "components_raw": {
+        "return_strength_raw": -2.5579000000000005,
+        "traded_value_strength_raw": 0.604,
+        "breadth_pct": 0.0,
+        "core_leadership_return_pct": -2.5579,
+        "catalyst": null
+      },
+      "data_quality": "PARTIAL"
+    },
+    {
+      "prediction_run_id": "RUN_20260820_182540902646Z",
+      "entity_type": "US_MASTER_SECTOR",
+      "entity_id": "US_09_AEROSPACE",
+      "score_type": "US_SECTOR",
+      "score": 19.05,
+      "rank": 16,
+      "components": {
+        "return_strength": 0.0,
+        "traded_value_strength": 50.0,
+        "breadth": 14.285714285714286,
+        "core_leadership": 0.0,
+        "catalyst": null
+      },
+      "components_raw": {
+        "return_strength_raw": -5.138450164855364,
+        "traded_value_strength_raw": 0.5145714285714286,
+        "breadth_pct": 14.285714285714286,
+        "core_leadership_return_pct": -5.1665,
+        "catalyst": null
+      },
+      "data_quality": "PARTIAL"
+    },
+    {
+      "prediction_run_id": "RUN_20260820_182540902646Z",
+      "entity_type": "US_MASTER_SECTOR",
+      "entity_id": "US_10_LITHIUM",
+      "score_type": "US_SECTOR",
+      "score": 72.13,
+      "rank": 2,
+      "components": {
+        "return_strength": 87.5,
+        "traded_value_strength": 68.75,
+        "breadth": 33.333333333333336,
+        "core_leadership": 86.67,
+        "catalyst": null
+      },
+      "components_raw": {
+        "return_strength_raw": 0.3495339616409301,
+        "traded_value_strength_raw": 0.5913333333333334,
+        "breadth_pct": 33.333333333333336,
+        "core_leadership_return_pct": 0.5809,
+        "catalyst": null
+      },
+      "data_quality": "PARTIAL"
+    },
+    {
+      "prediction_run_id": "RUN_20260820_182540902646Z",
+      "entity_type": "US_MASTER_SECTOR",
+      "entity_id": "US_11_SOFC",
+      "score_type": "US_SECTOR",
+      "score": 9.51,
+      "rank": 17,
+      "components": {
+        "return_strength": 18.75,
+        "traded_value_strength": 0.0,
+        "breadth": 0.0,
+        "core_leadership": 20.0,
+        "catalyst": null
+      },
+      "components_raw": {
+        "return_strength_raw": -3.1332,
+        "traded_value_strength_raw": 0.317,
+        "breadth_pct": 0.0,
+        "core_leadership_return_pct": -3.1332,
+        "catalyst": null
+      },
+      "data_quality": "PARTIAL"
+    },
+    {
+      "prediction_run_id": "RUN_20260820_182540902646Z",
+      "entity_type": "US_MASTER_SECTOR",
+      "entity_id": "US_12_PHARMA_BIO",
+      "score_type": "US_SECTOR",
+      "score": 50.67,
+      "rank": 6,
+      "components": {
+        "return_strength": 31.25,
+        "traded_value_strength": 100.0,
+        "breadth": 0.0,
+        "core_leadership": 46.67,
+        "catalyst": null
+      },
+      "components_raw": {
+        "return_strength_raw": -2.3189850522489577,
+        "traded_value_strength_raw": 1.597,
+        "breadth_pct": 0.0,
+        "core_leadership_return_pct": -1.8925,
+        "catalyst": null
+      },
+      "data_quality": "PARTIAL"
+    },
+    {
+      "prediction_run_id": "RUN_20260820_182540902646Z",
+      "entity_type": "US_MASTER_SECTOR",
+      "entity_id": "US_13_SEMI_ETF",
+      "score_type": "US_SECTOR",
+      "score": 63.28,
+      "rank": 4,
+      "components": {
+        "return_strength": 75.0,
+        "traded_value_strength": 56.25,
+        "breadth": 50.0,
+        "core_leadership": null,
+        "catalyst": null
+      },
+      "components_raw": {
+        "return_strength_raw": -0.09555000000000002,
+        "traded_value_strength_raw": 0.5645,
+        "breadth_pct": 50.0,
+        "core_leadership_return_pct": null,
+        "catalyst": null
+      },
+      "data_quality": "PARTIAL"
+    },
+    {
+      "prediction_run_id": "RUN_20260820_182540902646Z",
+      "entity_type": "US_MASTER_SECTOR",
+      "entity_id": "US_14_AI_SOFTWARE",
+      "score_type": "US_SECTOR",
+      "score": 37.71,
+      "rank": 11,
+      "components": {
+        "return_strength": 68.75,
+        "traded_value_strength": 6.25,
+        "breadth": 0.0,
+        "core_leadership": 80.0,
+        "catalyst": null
+      },
+      "components_raw": {
+        "return_strength_raw": -0.822447184708709,
+        "traded_value_strength_raw": 0.3355,
+        "breadth_pct": 0.0,
+        "core_leadership_return_pct": -0.2626,
+        "catalyst": null
+      },
+      "data_quality": "PARTIAL"
+    },
+    {
+      "prediction_run_id": "RUN_20260820_182540902646Z",
+      "entity_type": "US_MASTER_SECTOR",
+      "entity_id": "US_15_QUANTUM",
+      "score_type": "US_SECTOR",
+      "score": 24.01,
+      "rank": 15,
+      "components": {
+        "return_strength": 6.25,
+        "traded_value_strength": 62.5,
+        "breadth": 0.0,
+        "core_leadership": 6.67,
+        "catalyst": null
+      },
+      "components_raw": {
+        "return_strength_raw": -4.753253491755348,
+        "traded_value_strength_raw": 0.5823333333333333,
+        "breadth_pct": 0.0,
+        "core_leadership_return_pct": -4.5664,
+        "catalyst": null
+      },
+      "data_quality": "PARTIAL"
+    },
+    {
+      "prediction_run_id": "RUN_20260820_182540902646Z",
+      "entity_type": "US_MASTER_SECTOR",
+      "entity_id": "US_16_EV",
+      "score_type": "US_SECTOR",
+      "score": 53.75,
+      "rank": 5,
+      "components": {
+        "return_strength": 37.5,
+        "traded_value_strength": 87.5,
+        "breadth": 33.333333333333336,
+        "core_leadership": 40.0,
+        "catalyst": null
+      },
+      "components_raw": {
+        "return_strength_raw": -2.2843397915949333,
+        "traded_value_strength_raw": 0.6686666666666667,
+        "breadth_pct": 33.333333333333336,
+        "core_leadership_return_pct": -2.3431,
+        "catalyst": null
+      },
+      "data_quality": "PARTIAL"
+    },
+    {
+      "prediction_run_id": "RUN_20260820_182540902646Z",
+      "entity_type": "US_MASTER_SECTOR",
+      "entity_id": "US_17_CRYPTO",
+      "score_type": "US_SECTOR",
+      "score": 97.92,
+      "rank": 1,
+      "components": {
+        "return_strength": 100.0,
+        "traded_value_strength": 93.75,
+        "breadth": 100.0,
+        "core_leadership": 100.0,
+        "catalyst": null
+      },
+      "components_raw": {
+        "return_strength_raw": 7.2731814895818285,
+        "traded_value_strength_raw": 1.4209999999999998,
+        "breadth_pct": 100.0,
+        "core_leadership_return_pct": 7.4059,
+        "catalyst": null
+      },
+      "data_quality": "PARTIAL"
+    }
+  ],
+  "sox_confirmation": {
+    "status": "CONFIRMS",
+    "sox_return_pct": -0.0967,
+    "primary_direction": "DOWN",
+    "confirmations": [
+      {
+        "ticker": "SOXL",
+        "confirms_primary": true,
+        "return_pct": -0.4887
+      },
+      {
+        "ticker": "SOXS",
+        "confirms_primary": true,
+        "return_pct": 0.2976
+      }
+    ],
+    "adjustment": 3.0,
+    "adjustment_cap": 3.0,
+    "note": "이 adjustment는 US Sector Score(반도체, US_02_SEMICONDUCTOR)의 보조 필드로만 기록되며 7.1의 0.35/0.30/0.15/0.10/0.10 가중치 산식 자체에는 포함되지 않는다."
+  }
+}

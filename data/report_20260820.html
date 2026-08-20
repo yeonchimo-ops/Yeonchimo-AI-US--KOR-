@@ -1,0 +1,477 @@
+<title>Yeonchimo AI Market · US Sector Score — 20260820</title>
+<style>
+:root {
+  --bg:#F6F5F0; --surface:#FFFFFF; --ink:#1B1C22; --ink-soft:#5C5F6B; --line:#E1DED3; --accent:#A8752E;
+  --up:#D6483F; --up-soft:#FBE7E4; --down:#2D62D8; --down-soft:#E6ECFC;
+  --hero-bg:#191B21; --hero-surface:#22252D; --hero-ink:#F3F1E9; --hero-accent:#E0AC55;
+  --flat:#8B8E99; --ink-faint:#8B8E99; --surface-2:#EFEDE5;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg:#121317; --surface:#1A1C22; --ink:#ECEBE6; --ink-soft:#A5A8B3; --line:#2C2F38; --accent:#E0AC55;
+    --up:#FF7A70; --up-soft:#3A2020; --down:#6E9BFF; --down-soft:#1E2740;
+    --hero-bg:#0C0D10; --hero-surface:#17181D; --hero-ink:#F3F1E9; --hero-accent:#E9BB6C;
+    --flat:#7C7F8B; --ink-faint:#6E7180; --surface-2:#22252C;
+  }
+}
+:root[data-theme="dark"] {
+  --bg:#121317; --surface:#1A1C22; --ink:#ECEBE6; --ink-soft:#A5A8B3; --line:#2C2F38; --accent:#E0AC55;
+  --up:#FF7A70; --up-soft:#3A2020; --down:#6E9BFF; --down-soft:#1E2740;
+  --hero-bg:#0C0D10; --hero-surface:#17181D; --hero-ink:#F3F1E9; --hero-accent:#E9BB6C;
+  --flat:#7C7F8B; --ink-faint:#6E7180; --surface-2:#22252C;
+}
+:root[data-theme="light"] {
+  --bg:#F6F5F0; --surface:#FFFFFF; --ink:#1B1C22; --ink-soft:#5C5F6B; --line:#E1DED3; --accent:#A8752E;
+  --up:#D6483F; --up-soft:#FBE7E4; --down:#2D62D8; --down-soft:#E6ECFC;
+  --hero-bg:#191B21; --hero-surface:#22252D; --hero-ink:#F3F1E9; --hero-accent:#E0AC55;
+  --flat:#8B8E99; --ink-faint:#8B8E99; --surface-2:#EFEDE5;
+}
+* { box-sizing: border-box; }
+html { background: var(--bg); }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Malgun Gothic', 'Apple SD Gothic Neo', system-ui, sans-serif;
+  max-width: 760px; margin: 0 auto; padding: 0 18px 70px;
+  line-height: 1.55; font-size: 15px;
+}
+.mono { font-family: 'SF Mono', 'Roboto Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums; font-feature-settings: "tnum" 1; }
+.up { color: var(--up); }
+.down { color: var(--down); }
+.flat { color: var(--flat); }
+.muted { color: var(--ink-faint); font-size: 13px; }
+
+.masthead { padding: 32px 0 20px; border-bottom: 1px solid var(--line); }
+.wordmark { font-size: 13px; letter-spacing: 0.1em; color: var(--accent); text-transform: uppercase; font-weight: 700; }
+.masthead h1 { font-size: 24px; margin: 6px 0 10px; font-weight: 700; text-wrap: balance; }
+.masthead .date { font-family: 'SF Mono', ui-monospace, monospace; color: var(--ink-soft); font-size: 12.5px; }
+.caveat { background: var(--surface-2); border-radius: 10px; padding: 10px 14px; font-size: 12.5px; color: var(--ink-soft); margin-top: 14px; }
+.disclaimer { font-size: 12px; color: var(--ink-faint); margin-top: 8px; }
+
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 22px; margin: 18px 0; }
+.card h2 { font-size: 17px; margin: 0 0 14px; display:flex; align-items:center; gap:8px; }
+.card h2 .idx { color: var(--ink-faint); font-weight: 500; font-size: 13px; }
+
+.hero { background: var(--hero-bg); color: var(--hero-ink); border-radius: 16px; padding: 24px 22px; margin: 20px 0; }
+.hero-kospi { display:flex; align-items:baseline; justify-content: space-between; margin-bottom: 18px; }
+.hero-kospi .lbl { font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: #9DA0AC; }
+.hero-kospi .val { font-family: 'SF Mono', ui-monospace, monospace; font-size: 30px; font-weight: 700; color: var(--hero-accent); }
+.hero-section-lbl { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #9DA0AC; margin: 16px 0 8px; }
+.hero-top-item { display:flex; align-items:center; gap: 10px; padding: 7px 0; border-bottom: 1px solid #2A2D36; font-size: 13.5px; }
+.hero-top-item:last-child { border-bottom: none; }
+.hero-top-rank { font-family: 'SF Mono', monospace; color: var(--hero-accent); font-weight:700; width: 16px; }
+.hero-top-name { flex: 1; }
+.hero-top-val { font-family: 'SF Mono', monospace; font-weight: 700; }
+.hero-divergence { margin-top: 14px; background: rgba(255,255,255,0.05); border-radius: 10px; padding: 10px 14px; }
+.hero-div-label { font-size: 12.5px; font-weight: 700; color: var(--hero-accent); margin-bottom: 4px; }
+.hero-divergence ul { margin: 0; padding-left: 18px; font-size: 12.5px; color: #C9CBD3; display:flex; flex-direction:column; gap: 3px; }
+.hero-daycount { margin-top: 14px; font-size: 12px; color: #9DA0AC; }
+
+.group-list { display:flex; flex-direction:column; gap: 2px; }
+.group-item { border-bottom: 1px solid var(--line); }
+.group-item:last-child { border-bottom: none; }
+.group-item summary {
+  display:flex; align-items:center; gap: 10px; padding: 11px 4px; cursor: pointer; list-style: none;
+  font-size: 13.5px;
+}
+.group-item summary::-webkit-details-marker { display:none; }
+.group-item summary::before { content: "▸"; color: var(--ink-faint); font-size: 11px; transition: transform 0.15s; flex-shrink:0; }
+.group-item[open] summary::before { transform: rotate(90deg); }
+.g-name { flex: 1.6; font-weight: 600; min-width: 0; }
+.draft-tag { font-size: 9.5px; background: var(--surface-2); color: var(--ink-faint); border-radius: 4px; padding: 1px 5px; font-weight: 700; letter-spacing: 0.03em; margin-left: 4px; }
+.g-score { flex: 0.7; text-align:right; font-family: 'SF Mono', monospace; font-weight: 700; }
+.g-label { flex: 1.1; text-align:right; font-size: 11px; font-weight: 700; letter-spacing: 0.02em; }
+.g-quality { flex: 0.9; text-align:right; color: var(--ink-faint); font-size: 11px; }
+
+.stock-table-wrap { overflow-x: auto; margin: 4px 0 14px 18px; }
+.stock-table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+.stock-table th { text-align:left; color: var(--ink-faint); font-weight:600; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.03em; padding: 6px 8px; border-bottom: 1px solid var(--line); white-space:nowrap; }
+.stock-table td { padding: 6px 8px; border-bottom: 1px solid var(--line); white-space:nowrap; }
+.stock-table tr:last-child td { border-bottom: none; }
+.stock-table .num { text-align:right; }
+.muted-cell { color: var(--ink-faint); font-size: 11.5px; }
+.component-line { font-size: 11.5px; color: var(--ink-soft); margin: 6px 0 12px 18px; }
+
+.index-row { display:flex; gap: 10px; margin: 18px 0; }
+.index-card { flex:1; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 14px 10px; min-width:0; }
+.index-name { font-size: 12px; color: var(--ink-soft); font-weight: 600; margin-bottom: 4px; }
+.index-price { font-family: 'SF Mono', ui-monospace, monospace; font-size: 17px; font-weight: 700; }
+.index-change { font-family: 'SF Mono', ui-monospace, monospace; font-size: 11.5px; margin-top: 2px; }
+.index-spark { width: 100%; height: 34px; margin-top: 8px; display:block; }
+.index-asof { font-size: 9.5px; color: var(--ink-faint); margin-top: 4px; }
+
+.mkt-wrap { display:flex; gap: 10px; margin: 10px 0 18px; flex-wrap: wrap; }
+.mkt-section { flex: 1; min-width: 220px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px; }
+.mkt-title { font-size: 11.5px; font-weight: 700; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 10px; }
+.mkt-item { display:flex; align-items:baseline; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid var(--line); gap: 8px; }
+.mkt-item:last-child { border-bottom: none; }
+.mkt-name { font-size: 12px; color: var(--ink-soft); flex-shrink: 0; }
+.mkt-vals { text-align: right; }
+.mkt-value { font-family: 'SF Mono', ui-monospace, monospace; font-size: 13px; font-weight: 700; }
+.mkt-change { font-family: 'SF Mono', ui-monospace, monospace; font-size: 10.5px; margin-left: 6px; }
+
+footer { margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 11.5px; color: var(--ink-faint); display:flex; flex-direction:column; gap:5px; }
+</style>
+
+<div class="masthead">
+  <div class="wordmark">Yeonchimo AI Market · PHASE 3</div>
+  <h1>US Close Wrap — 2026.08.20</h1>
+  <div class="date">2026년 08월 21일 03:25 KST 발행 · run_id RUN_20260820_182540902646Z</div>
+  <div class="caveat">📌 이 스코어는 명세 7.1의 4개 구성요소(등락강도/거래금액강도/Breadth/핵심리더십)만 반영합니다. Catalyst(뉴스·실적)는 PHASE 5 대상이라 항상 제외되어 있어 모든 섹터가 PARTIAL 품질입니다.</div>
+  <div class="disclaimer">본 리포트는 투자 조언이 아니며, 매수/매도 신호가 아닙니다. 데이터 출처: yfinance.</div>
+</div>
+
+<div class="index-row"><div class="index-card"><div class="index-name">다우산업</div><div class="index-price mono">52,867.71</div><div class="index-change mono down">▼ -595.34 (-1.11%)</div><svg class="index-spark" viewBox="0 0 200 34" preserveAspectRatio="none"><polygon points="3,31 3.0,3.0 22.4,4.4 41.8,8.8 61.2,9.3 80.6,7.6 100.0,10.2 119.4,16.6 138.8,19.3 158.2,16.5 177.6,31.0 197.0,30.5 197,31" fill="var(--down)" opacity="0.12"></polygon><polyline points="3.0,3.0 22.4,4.4 41.8,8.8 61.2,9.3 80.6,7.6 100.0,10.2 119.4,16.6 138.8,19.3 158.2,16.5 177.6,31.0 197.0,30.5" fill="none" stroke="var(--down)" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"></polyline></svg><div class="index-asof">2026-08-21 03:25 기준 · finance.naver.com/world</div></div><div class="index-card"><div class="index-name">나스닥종합</div><div class="index-price mono">26,042.29</div><div class="index-change mono down">▼ -288.80 (-1.10%)</div><svg class="index-spark" viewBox="0 0 200 34" preserveAspectRatio="none"><polygon points="3,31 3.0,7.1 22.4,10.2 41.8,16.0 61.2,10.8 80.6,3.0 100.0,5.7 119.4,8.8 138.8,21.7 158.2,20.2 177.6,31.0 197.0,30.7 197,31" fill="var(--down)" opacity="0.12"></polygon><polyline points="3.0,7.1 22.4,10.2 41.8,16.0 61.2,10.8 80.6,3.0 100.0,5.7 119.4,8.8 138.8,21.7 158.2,20.2 177.6,31.0 197.0,30.7" fill="none" stroke="var(--down)" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"></polyline></svg><div class="index-asof">2026-08-21 03:25 기준 · finance.naver.com/world</div></div><div class="index-card"><div class="index-name">S&P 500</div><div class="index-price mono">7,653.79</div><div class="index-change mono down">▼ -54.19 (-0.70%)</div><svg class="index-spark" viewBox="0 0 200 34" preserveAspectRatio="none"><polygon points="3,31 3.0,10.9 22.4,11.8 41.8,16.5 61.2,12.6 80.6,3.0 100.0,5.5 119.4,13.3 138.8,23.5 158.2,20.4 177.6,31.0 197.0,30.7 197,31" fill="var(--down)" opacity="0.12"></polygon><polyline points="3.0,10.9 22.4,11.8 41.8,16.5 61.2,12.6 80.6,3.0 100.0,5.5 119.4,13.3 138.8,23.5 158.2,20.4 177.6,31.0 197.0,30.7" fill="none" stroke="var(--down)" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"></polyline></svg><div class="index-asof">2026-08-21 03:25 기준 · finance.naver.com/world</div></div></div>
+
+<div class="mkt-wrap"><div class="mkt-section"><div class="mkt-title">환전 고시 환율</div><div class="mkt-item"><span class="mkt-name">미국 USD</span><span class="mkt-vals"><span class="mkt-value mono">1,396.50</span><span class="mkt-change mono up">▲6.50</span></span></div><div class="mkt-item"><span class="mkt-name">일본 JPY(100엔)</span><span class="mkt-vals"><span class="mkt-value mono">877.56</span><span class="mkt-change mono down">▼1.88</span></span></div><div class="mkt-item"><span class="mkt-name">유럽연합 EUR</span><span class="mkt-vals"><span class="mkt-value mono">1,630.13</span><span class="mkt-change mono up">▲6.68</span></span></div><div class="mkt-item"><span class="mkt-name">중국 CNY</span><span class="mkt-vals"><span class="mkt-value mono">207.60</span><span class="mkt-change mono up">▲1.07</span></span></div></div><div class="mkt-section"><div class="mkt-title">국제 시장 환율</div><div class="mkt-item"><span class="mkt-name">달러/일본 엔</span><span class="mkt-vals"><span class="mkt-value mono">158.7200</span><span class="mkt-change mono up">▲0.3700</span></span></div><div class="mkt-item"><span class="mkt-name">유로/달러</span><span class="mkt-vals"><span class="mkt-value mono">1.1683</span><span class="mkt-change mono up">▲0.0021</span></span></div><div class="mkt-item"><span class="mkt-name">영국 파운드/달러</span><span class="mkt-vals"><span class="mkt-value mono">1.3632</span><span class="mkt-change mono up">▲0.0024</span></span></div><div class="mkt-item"><span class="mkt-name">달러인덱스</span><span class="mkt-vals"><span class="mkt-value mono">98.7300</span><span class="mkt-change mono down">▼0.8200</span></span></div></div><div class="mkt-section"><div class="mkt-title">유가·금시세</div><div class="mkt-item"><span class="mkt-name">WTI</span><span class="mkt-vals"><span class="mkt-value mono">84.39</span><span class="mkt-change mono up">▲0.33</span></span></div><div class="mkt-item"><span class="mkt-name">휘발유</span><span class="mkt-vals"><span class="mkt-value mono">1861.93</span><span class="mkt-change mono down">▼0.24</span></span></div><div class="mkt-item"><span class="mkt-name">국제 금</span><span class="mkt-vals"><span class="mkt-value mono">4545.3</span><span class="mkt-change mono up">▲124.70</span></span></div><div class="mkt-item"><span class="mkt-name">국내 금</span><span class="mkt-vals"><span class="mkt-value mono">202574.77</span><span class="mkt-change mono up">▲1,749.24</span></span></div></div></div>
+
+<div class="mkt-title" style="margin:4px 0 8px;">미국국채 수익률</div><div class="index-row"><div class="index-card"><div class="index-name">미국채 2년</div><div class="muted-cell">MISSING</div></div><div class="index-card"><div class="index-name">미국채 10년</div><div class="muted-cell">MISSING</div></div><div class="index-card"><div class="index-name">미국채 30년</div><div class="muted-cell">MISSING</div></div></div>
+
+<div class="hero">
+  <div class="hero-kospi">
+    <div><div class="lbl">SOX 반도체지수</div></div>
+    <div class="val down">-0.10%</div>
+  </div>
+  <div class="hero-section-lbl">US Sector Score TOP 3</div>
+  <div class="hero-top-item"><span class="hero-top-rank">1</span><span class="hero-top-name">가상화폐</span><span class="hero-top-val up mono">97.9</span></div>
+<div class="hero-top-item"><span class="hero-top-rank">2</span><span class="hero-top-name">리튬</span><span class="hero-top-val up mono">72.1</span></div>
+<div class="hero-top-item"><span class="hero-top-rank">3</span><span class="hero-top-name">반도체</span><span class="hero-top-val up mono">67.8</span></div>
+  <div class="hero-divergence">
+    <div class="hero-div-label">SOX / SOXL / SOXS 확인 신호</div>
+    <ul><li>^SOX -0.10%  (SOX 방향과 SOXL/SOXS 일치, 보조조정 +3.0점)</li></ul>
+  </div>
+  <div class="hero-daycount">17개 섹터 전체 표시 · 고정 display_order 유지 (명세 6.5)</div>
+</div>
+
+<div class="card">
+  <h2><span class="idx">③</span>US SECTOR SCORE — 17개 섹터 (고정 순서)</h2>
+  <p class="muted" style="margin-bottom:14px;">섹터명 / 점수(0~100) / 강도등급 / 데이터품질 — 항목을 눌러 구성종목별 상세를 확인하세요.</p>
+  <div class="group-list">
+<details class="group-item">
+<summary>
+  <span class="g-name">M7</span>
+  <span class="g-score mono">38.7</span>
+  <span class="g-label down">🔴 WEAK</span>
+  <span class="g-quality">PARTIAL</span>
+</summary>
+<div class="component-line">구성요소(0~100) — return_strength: 62.5 · traded_value_strength: 18.8 · breadth: 0.0 · core_leadership: 73.3 · catalyst: -</div>
+<div class="stock-table-wrap">
+<table class="stock-table">
+<thead><tr><th>종목</th><th>상태</th><th class="num">등락률</th><th class="num">가격</th><th class="num">시가총액</th><th class="num">거래금액</th></tr></thead>
+<tbody>
+<tr><td><div>엔비디아</div><div class="mono muted-cell">NVDA</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>애플</div><div class="mono muted-cell">AAPL</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>마이크로소프트</div><div class="mono muted-cell">MSFT</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>알파벳(구글)</div><div class="mono muted-cell">GOOGL</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>아마존</div><div class="mono muted-cell">AMZN</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>메타 플랫폼스</div><div class="mono muted-cell">META</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>테슬라</div><div class="mono muted-cell">TSLA</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+</tbody>
+</table>
+</div>
+</details><details class="group-item">
+<summary>
+  <span class="g-name">반도체</span>
+  <span class="g-score mono">67.8</span>
+  <span class="g-label up">🟢 POSITIVE</span>
+  <span class="g-quality">PARTIAL</span>
+</summary>
+<div class="component-line">구성요소(0~100) — return_strength: 93.8 · traded_value_strength: 31.2 · breadth: 63.6 · core_leadership: 93.3 · catalyst: -</div>
+<div class="stock-table-wrap">
+<table class="stock-table">
+<thead><tr><th>종목</th><th>상태</th><th class="num">등락률</th><th class="num">가격</th><th class="num">시가총액</th><th class="num">거래금액</th></tr></thead>
+<tbody>
+<tr><td><div>SK하이닉스(ADR)</div><div class="mono muted-cell">SKHY</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>마이크론 테크놀로지</div><div class="mono muted-cell">MU</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>샌디스크</div><div class="mono muted-cell">SNDK</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>마벨 테크놀로지</div><div class="mono muted-cell">MRVL</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>시게이트 테크놀로지</div><div class="mono muted-cell">STX</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>TSMC(ADR)</div><div class="mono muted-cell">TSM</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>브로드컴</div><div class="mono muted-cell">AVGO</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>AMD</div><div class="mono muted-cell">AMD</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>인텔</div><div class="mono muted-cell">INTC</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>텍사스 인스트루먼트</div><div class="mono muted-cell">TXN</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>ASML 홀딩(ADR)</div><div class="mono muted-cell">ASML</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+</tbody>
+</table>
+</div>
+</details><details class="group-item">
+<summary>
+  <span class="g-name">발전설비</span>
+  <span class="g-score mono">33.4</span>
+  <span class="g-label down">🔴 WEAK</span>
+  <span class="g-quality">PARTIAL</span>
+</summary>
+<div class="component-line">구성요소(0~100) — return_strength: 12.5 · traded_value_strength: 81.2 · breadth: 0.0 · core_leadership: 13.3 · catalyst: -</div>
+<div class="stock-table-wrap">
+<table class="stock-table">
+<thead><tr><th>종목</th><th>상태</th><th class="num">등락률</th><th class="num">가격</th><th class="num">시가총액</th><th class="num">거래금액</th></tr></thead>
+<tbody>
+<tr><td><div>GE 버노바</div><div class="mono muted-cell">GEV</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+</tbody>
+</table>
+</div>
+</details><details class="group-item">
+<summary>
+  <span class="g-name">원전·SMR</span>
+  <span class="g-score mono">40.7</span>
+  <span class="g-label down">🔴 WEAK</span>
+  <span class="g-quality">PARTIAL</span>
+</summary>
+<div class="component-line">구성요소(0~100) — return_strength: 50.0 · traded_value_strength: 43.8 · breadth: 0.0 · core_leadership: 60.0 · catalyst: -</div>
+<div class="stock-table-wrap">
+<table class="stock-table">
+<thead><tr><th>종목</th><th>상태</th><th class="num">등락률</th><th class="num">가격</th><th class="num">시가총액</th><th class="num">거래금액</th></tr></thead>
+<tbody>
+<tr><td><div>뉴스케일 파워</div><div class="mono muted-cell">SMR</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>오클로</div><div class="mono muted-cell">OKLO</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>컨스텔레이션 에너지</div><div class="mono muted-cell">CEG</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>Global X 우라늄 ETF</div><div class="mono muted-cell">URA</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+</tbody>
+</table>
+</div>
+</details><details class="group-item">
+<summary>
+  <span class="g-name">태양광</span>
+  <span class="g-score mono">33.5</span>
+  <span class="g-label down">🔴 WEAK</span>
+  <span class="g-quality">PARTIAL</span>
+</summary>
+<div class="component-line">구성요소(0~100) — return_strength: 56.2 · traded_value_strength: 12.5 · breadth: 0.0 · core_leadership: 66.7 · catalyst: -</div>
+<div class="stock-table-wrap">
+<table class="stock-table">
+<thead><tr><th>종목</th><th>상태</th><th class="num">등락률</th><th class="num">가격</th><th class="num">시가총액</th><th class="num">거래금액</th></tr></thead>
+<tbody>
+<tr><td><div>인페이즈 에너지</div><div class="mono muted-cell">ENPH</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>Invesco 솔라 ETF</div><div class="mono muted-cell">TAN</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>넥스트에라 에너지</div><div class="mono muted-cell">NEE</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>퍼스트 솔라</div><div class="mono muted-cell">FSLR</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+</tbody>
+</table>
+</div>
+</details><details class="group-item">
+<summary>
+  <span class="g-name">풍력</span>
+  <span class="g-score mono">32.5</span>
+  <span class="g-label down">🔴 WEAK</span>
+  <span class="g-quality">PARTIAL</span>
+</summary>
+<div class="component-line">구성요소(0~100) — return_strength: 43.8 · traded_value_strength: 37.5 · breadth: 0.0 · core_leadership: 26.7 · catalyst: -</div>
+<div class="stock-table-wrap">
+<table class="stock-table">
+<thead><tr><th>종목</th><th>상태</th><th class="num">등락률</th><th class="num">가격</th><th class="num">시가총액</th><th class="num">거래금액</th></tr></thead>
+<tbody>
+<tr><td><div>넥스트에라 에너지</div><div class="mono muted-cell">NEE</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>제너럴 일렉트릭</div><div class="mono muted-cell">GE</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>클리어웨이 에너지</div><div class="mono muted-cell">CWEN</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>브룩필드 리뉴어블 파트너스</div><div class="mono muted-cell">BEP</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+</tbody>
+</table>
+</div>
+</details><details class="group-item">
+<summary>
+  <span class="g-name">광통신</span>
+  <span class="g-score mono">50.0</span>
+  <span class="g-label flat">⚪ NEUTRAL</span>
+  <span class="g-quality">PARTIAL</span>
+</summary>
+<div class="component-line">구성요소(0~100) — return_strength: 81.2 · traded_value_strength: 25.0 · breadth: 25.0 · core_leadership: 53.3 · catalyst: -</div>
+<div class="stock-table-wrap">
+<table class="stock-table">
+<thead><tr><th>종목</th><th>상태</th><th class="num">등락률</th><th class="num">가격</th><th class="num">시가총액</th><th class="num">거래금액</th></tr></thead>
+<tbody>
+<tr><td><div>루멘텀 홀딩스</div><div class="mono muted-cell">LITE</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>코히런트</div><div class="mono muted-cell">COHR</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>코닝</div><div class="mono muted-cell">GLW</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>시에나</div><div class="mono muted-cell">CIEN</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+</tbody>
+</table>
+</div>
+</details><details class="group-item">
+<summary>
+  <span class="g-name">방산</span>
+  <span class="g-score mono">38.4</span>
+  <span class="g-label down">🔴 WEAK</span>
+  <span class="g-quality">PARTIAL</span>
+</summary>
+<div class="component-line">구성요소(0~100) — return_strength: 25.0 · traded_value_strength: 75.0 · breadth: 0.0 · core_leadership: 33.3 · catalyst: -</div>
+<div class="stock-table-wrap">
+<table class="stock-table">
+<thead><tr><th>종목</th><th>상태</th><th class="num">등락률</th><th class="num">가격</th><th class="num">시가총액</th><th class="num">거래금액</th></tr></thead>
+<tbody>
+<tr><td><div>록히드 마틴</div><div class="mono muted-cell">LMT</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+</tbody>
+</table>
+</div>
+</details><details class="group-item">
+<summary>
+  <span class="g-name">우주항공</span>
+  <span class="g-score mono">19.1</span>
+  <span class="g-label down">🔴 VERY_WEAK</span>
+  <span class="g-quality">PARTIAL</span>
+</summary>
+<div class="component-line">구성요소(0~100) — return_strength: 0.0 · traded_value_strength: 50.0 · breadth: 14.3 · core_leadership: 0.0 · catalyst: -</div>
+<div class="stock-table-wrap">
+<table class="stock-table">
+<thead><tr><th>종목</th><th>상태</th><th class="num">등락률</th><th class="num">가격</th><th class="num">시가총액</th><th class="num">거래금액</th></tr></thead>
+<tbody>
+<tr><td><div>스페이스X(표시값)</div><div class="mono muted-cell">SPCX</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>로켓 랩</div><div class="mono muted-cell">RKLB</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>AST 스페이스모바일</div><div class="mono muted-cell">ASTS</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>표시값(재검증 필요)</div><div class="mono muted-cell">AIFF</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>표시값(재검증 필요)</div><div class="mono muted-cell">FLY</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>인튜이티브 머신스</div><div class="mono muted-cell">LUNR</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>플래닛 랩스</div><div class="mono muted-cell">PL</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+</tbody>
+</table>
+</div>
+</details><details class="group-item">
+<summary>
+  <span class="g-name">리튬</span>
+  <span class="g-score mono">72.1</span>
+  <span class="g-label up">🟢 STRONG</span>
+  <span class="g-quality">PARTIAL</span>
+</summary>
+<div class="component-line">구성요소(0~100) — return_strength: 87.5 · traded_value_strength: 68.8 · breadth: 33.3 · core_leadership: 86.7 · catalyst: -</div>
+<div class="stock-table-wrap">
+<table class="stock-table">
+<thead><tr><th>종목</th><th>상태</th><th class="num">등락률</th><th class="num">가격</th><th class="num">시가총액</th><th class="num">거래금액</th></tr></thead>
+<tbody>
+<tr><td><div>알버말</div><div class="mono muted-cell">ALB</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>리튬 아메리카스</div><div class="mono muted-cell">LAC</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>Global X 리튬 ETF</div><div class="mono muted-cell">LIT</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+</tbody>
+</table>
+</div>
+</details><details class="group-item">
+<summary>
+  <span class="g-name">SOFC·친환경</span>
+  <span class="g-score mono">9.5</span>
+  <span class="g-label down">🔴 VERY_WEAK</span>
+  <span class="g-quality">PARTIAL</span>
+</summary>
+<div class="component-line">구성요소(0~100) — return_strength: 18.8 · traded_value_strength: 0.0 · breadth: 0.0 · core_leadership: 20.0 · catalyst: -</div>
+<div class="stock-table-wrap">
+<table class="stock-table">
+<thead><tr><th>종목</th><th>상태</th><th class="num">등락률</th><th class="num">가격</th><th class="num">시가총액</th><th class="num">거래금액</th></tr></thead>
+<tbody>
+<tr><td><div>블룸 에너지</div><div class="mono muted-cell">BE</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+</tbody>
+</table>
+</div>
+</details><details class="group-item">
+<summary>
+  <span class="g-name">제약·바이오</span>
+  <span class="g-score mono">50.7</span>
+  <span class="g-label flat">⚪ NEUTRAL</span>
+  <span class="g-quality">PARTIAL</span>
+</summary>
+<div class="component-line">구성요소(0~100) — return_strength: 31.2 · traded_value_strength: 100.0 · breadth: 0.0 · core_leadership: 46.7 · catalyst: -</div>
+<div class="stock-table-wrap">
+<table class="stock-table">
+<thead><tr><th>종목</th><th>상태</th><th class="num">등락률</th><th class="num">가격</th><th class="num">시가총액</th><th class="num">거래금액</th></tr></thead>
+<tbody>
+<tr><td><div>모더나</div><div class="mono muted-cell">MRNA</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>일라이 릴리</div><div class="mono muted-cell">LLY</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>노보 노디스크(ADR)</div><div class="mono muted-cell">NVO</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>화이자</div><div class="mono muted-cell">PFE</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+</tbody>
+</table>
+</div>
+</details><details class="group-item">
+<summary>
+  <span class="g-name">반도체 ETF</span>
+  <span class="g-score mono">63.3</span>
+  <span class="g-label up">🟢 POSITIVE</span>
+  <span class="g-quality">PARTIAL</span>
+</summary>
+<div class="component-line">구성요소(0~100) — return_strength: 75.0 · traded_value_strength: 56.2 · breadth: 50.0 · core_leadership: - · catalyst: -</div>
+<div class="stock-table-wrap">
+<table class="stock-table">
+<thead><tr><th>종목</th><th>상태</th><th class="num">등락률</th><th class="num">가격</th><th class="num">시가총액</th><th class="num">거래금액</th></tr></thead>
+<tbody>
+<tr><td><div>Direxion 반도체 불 3X</div><div class="mono muted-cell">SOXL</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>Direxion 반도체 베어 3X</div><div class="mono muted-cell">SOXS</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+</tbody>
+</table>
+</div>
+</details><details class="group-item">
+<summary>
+  <span class="g-name">AI·소프트웨어</span>
+  <span class="g-score mono">37.7</span>
+  <span class="g-label down">🔴 WEAK</span>
+  <span class="g-quality">PARTIAL</span>
+</summary>
+<div class="component-line">구성요소(0~100) — return_strength: 68.8 · traded_value_strength: 6.2 · breadth: 0.0 · core_leadership: 80.0 · catalyst: -</div>
+<div class="stock-table-wrap">
+<table class="stock-table">
+<thead><tr><th>종목</th><th>상태</th><th class="num">등락률</th><th class="num">가격</th><th class="num">시가총액</th><th class="num">거래금액</th></tr></thead>
+<tbody>
+<tr><td><div>팔란티어 테크놀로지스</div><div class="mono muted-cell">PLTR</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>오라클</div><div class="mono muted-cell">ORCL</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+</tbody>
+</table>
+</div>
+</details><details class="group-item">
+<summary>
+  <span class="g-name">양자컴퓨터</span>
+  <span class="g-score mono">24.0</span>
+  <span class="g-label down">🔴 VERY_WEAK</span>
+  <span class="g-quality">PARTIAL</span>
+</summary>
+<div class="component-line">구성요소(0~100) — return_strength: 6.2 · traded_value_strength: 62.5 · breadth: 0.0 · core_leadership: 6.7 · catalyst: -</div>
+<div class="stock-table-wrap">
+<table class="stock-table">
+<thead><tr><th>종목</th><th>상태</th><th class="num">등락률</th><th class="num">가격</th><th class="num">시가총액</th><th class="num">거래금액</th></tr></thead>
+<tbody>
+<tr><td><div>아이온큐</div><div class="mono muted-cell">IONQ</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>리게티 컴퓨팅</div><div class="mono muted-cell">RGTI</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>D-웨이브 퀀텀</div><div class="mono muted-cell">QBTS</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+</tbody>
+</table>
+</div>
+</details><details class="group-item">
+<summary>
+  <span class="g-name">전기차</span>
+  <span class="g-score mono">53.8</span>
+  <span class="g-label flat">⚪ NEUTRAL</span>
+  <span class="g-quality">PARTIAL</span>
+</summary>
+<div class="component-line">구성요소(0~100) — return_strength: 37.5 · traded_value_strength: 87.5 · breadth: 33.3 · core_leadership: 40.0 · catalyst: -</div>
+<div class="stock-table-wrap">
+<table class="stock-table">
+<thead><tr><th>종목</th><th>상태</th><th class="num">등락률</th><th class="num">가격</th><th class="num">시가총액</th><th class="num">거래금액</th></tr></thead>
+<tbody>
+<tr><td><div>테슬라</div><div class="mono muted-cell">TSLA</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>리비안</div><div class="mono muted-cell">RIVN</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>루시드 그룹</div><div class="mono muted-cell">LCID</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+</tbody>
+</table>
+</div>
+</details><details class="group-item">
+<summary>
+  <span class="g-name">가상화폐</span>
+  <span class="g-score mono">97.9</span>
+  <span class="g-label up">🟢🟢 VERY_STRONG</span>
+  <span class="g-quality">PARTIAL</span>
+</summary>
+<div class="component-line">구성요소(0~100) — return_strength: 100.0 · traded_value_strength: 93.8 · breadth: 100.0 · core_leadership: 100.0 · catalyst: -</div>
+<div class="stock-table-wrap">
+<table class="stock-table">
+<thead><tr><th>종목</th><th>상태</th><th class="num">등락률</th><th class="num">가격</th><th class="num">시가총액</th><th class="num">거래금액</th></tr></thead>
+<tbody>
+<tr><td><div>스트래티지(구 마이크로스트래티지)</div><div class="mono muted-cell">MSTR</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>마라 홀딩스</div><div class="mono muted-cell">MARA</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>코인베이스</div><div class="mono muted-cell">COIN</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>갤럭시 디지털</div><div class="mono muted-cell">GLXY</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+<tr><td><div>서클 인터넷 그룹</div><div class="mono muted-cell">CRCL</div></td><td class="mono muted-cell">-</td><td class="num muted-cell">MISSING</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td><td class="num muted-cell">-</td></tr>
+</tbody>
+</table>
+</div>
+</details>
+  </div>
+</div>
+
+<footer>
+  <div>mapping_version 1.0.0 · model_version phase3-us-sector-score-v1</div>
+  <div>이 스냅샷은 불변입니다 — 07:00 이후 동일 trade_date로 재계산되지 않습니다.</div>
+</footer>
