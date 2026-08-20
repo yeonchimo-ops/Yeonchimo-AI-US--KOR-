@@ -15,6 +15,7 @@ import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 from adapters.us_adapter import fetch_us_major_indices
 from adapters.naver_world_adapter import fetch_us_major_indices_naver
+from adapters.naver_marketindex_adapter import fetch_market_index_snapshot, SECTION_LABELS
 
 GEN_DIR = Path(__file__).parent / "data" / "generated"
 RUN_DIR = Path(__file__).parent / "data" / "prediction_runs"
@@ -129,6 +130,16 @@ body {
 .index-spark { width: 100%; height: 34px; margin-top: 8px; display:block; }
 .index-asof { font-size: 9.5px; color: var(--ink-faint); margin-top: 4px; }
 
+.mkt-wrap { display:flex; gap: 10px; margin: 10px 0 18px; flex-wrap: wrap; }
+.mkt-section { flex: 1; min-width: 220px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px; }
+.mkt-title { font-size: 11.5px; font-weight: 700; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 10px; }
+.mkt-item { display:flex; align-items:baseline; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid var(--line); gap: 8px; }
+.mkt-item:last-child { border-bottom: none; }
+.mkt-name { font-size: 12px; color: var(--ink-soft); flex-shrink: 0; }
+.mkt-vals { text-align: right; }
+.mkt-value { font-family: 'SF Mono', ui-monospace, monospace; font-size: 13px; font-weight: 700; }
+.mkt-change { font-family: 'SF Mono', ui-monospace, monospace; font-size: 10.5px; margin-left: 6px; }
+
 footer { margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 11.5px; color: var(--ink-faint); display:flex; flex-direction:column; gap:5px; }
 """
 
@@ -198,6 +209,33 @@ def render_index_row():
             f'</div>'
         )
     return f'<div class="index-row">{"".join(cards)}</div>'
+
+
+def render_market_index_section():
+    try:
+        data = fetch_market_index_snapshot()
+    except Exception:
+        return ""
+
+    sections = []
+    for key, label in SECTION_LABELS.items():
+        section = data.get(key, {"status": "MISSING", "items": []})
+        if section["status"] != "ACTUAL":
+            sections.append(f'<div class="mkt-section"><div class="mkt-title">{label}</div>'
+                            f'<div class="muted-cell">MISSING</div></div>')
+            continue
+        rows = []
+        for item in section["items"]:
+            cls = {"up": "up", "down": "down", "flat": "flat"}.get(item["direction"], "flat")
+            arrow = "▲" if item["direction"] == "up" else ("▼" if item["direction"] == "down" else "")
+            rows.append(
+                f'<div class="mkt-item"><span class="mkt-name">{item["name"]}</span>'
+                f'<span class="mkt-vals"><span class="mkt-value mono">{item["value"]}</span>'
+                f'<span class="mkt-change mono {cls}">{arrow}{item["change"]}</span></span></div>'
+            )
+        sections.append(f'<div class="mkt-section"><div class="mkt-title">{label}</div>{"".join(rows)}</div>')
+
+    return f'<div class="mkt-wrap">{"".join(sections)}</div>'
 
 
 def fmt_pct(v):
@@ -327,6 +365,8 @@ def build_html(trade_date):
 </div>
 
 {render_index_row()}
+
+{render_market_index_section()}
 
 <div class="hero">
   <div class="hero-kospi">
