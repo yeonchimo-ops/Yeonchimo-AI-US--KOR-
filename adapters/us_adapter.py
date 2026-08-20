@@ -91,6 +91,47 @@ def _missing_row(ticker, now, reason):
     }
 
 
+US_MAJOR_INDICES = [
+    {"ticker": "^DJI", "name": "다우산업"},
+    {"ticker": "^IXIC", "name": "나스닥종합"},
+    {"ticker": "^GSPC", "name": "S&P 500"},
+]
+
+
+def fetch_us_major_indices():
+    """미국 3대 지수의 최근 1거래일 인트라데이 흐름(스파크라인용)과 등락률을 가져온다.
+    이건 명세서에 정의된 항목이 아니라 사용자가 요청한 추가 기능이다."""
+    rows = []
+    now = datetime.now(timezone.utc).isoformat()
+    for idx in US_MAJOR_INDICES:
+        ticker = idx["ticker"]
+        try:
+            h = yf.Ticker(ticker).history(period="5d", interval="30m")
+            h = h.dropna(subset=["Close"])
+            if h.empty:
+                rows.append({**idx, "status": "MISSING"})
+                continue
+            last_day = h.index[-1].date()
+            day_bars = h[h.index.date == last_day]
+            if len(day_bars) < 2:
+                day_bars = h.tail(13)  # 하루치가 부족하면 최근 구간으로 대체
+
+            closes = [round(float(c), 2) for c in day_bars["Close"]]
+            price = closes[-1]
+            prev_close_hist = h[h.index.date < last_day]
+            prev_close = float(prev_close_hist["Close"].iloc[-1]) if not prev_close_hist.empty else closes[0]
+            change = round(price - prev_close, 2)
+            change_pct = round(change / prev_close * 100, 2) if prev_close else None
+
+            rows.append({
+                **idx, "status": "ACTUAL", "price": price, "change": change, "change_pct": change_pct,
+                "sparkline": closes, "as_of_bar": day_bars.index[-1].isoformat(), "fetched_at": now,
+            })
+        except Exception as e:
+            rows.append({**idx, "status": "MISSING", "error": str(e)})
+    return rows
+
+
 if __name__ == "__main__":
     sample = ["NVDA", "AAPL", "TSLA", "SOXL", "URA"]
     for r in fetch_us_market_snapshot(sample):

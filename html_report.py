@@ -11,6 +11,10 @@ sys.path.insert(0, str(Path(__file__).parent))
 if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
     sys.stdout.reconfigure(encoding="utf-8")
 
+import warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning)
+from adapters.us_adapter import fetch_us_major_indices
+
 GEN_DIR = Path(__file__).parent / "data" / "generated"
 RUN_DIR = Path(__file__).parent / "data" / "prediction_runs"
 
@@ -116,8 +120,63 @@ body {
 .muted-cell { color: var(--ink-faint); font-size: 11.5px; }
 .component-line { font-size: 11.5px; color: var(--ink-soft); margin: 6px 0 12px 18px; }
 
+.index-row { display:flex; gap: 10px; margin: 18px 0; }
+.index-card { flex:1; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 14px 10px; min-width:0; }
+.index-name { font-size: 12px; color: var(--ink-soft); font-weight: 600; margin-bottom: 4px; }
+.index-price { font-family: 'SF Mono', ui-monospace, monospace; font-size: 17px; font-weight: 700; }
+.index-change { font-family: 'SF Mono', ui-monospace, monospace; font-size: 11.5px; margin-top: 2px; }
+.index-spark { width: 100%; height: 34px; margin-top: 8px; display:block; }
+.index-asof { font-size: 9.5px; color: var(--ink-faint); margin-top: 4px; }
+
 footer { margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 11.5px; color: var(--ink-faint); display:flex; flex-direction:column; gap:5px; }
 """
+
+
+def render_sparkline_svg(values, up):
+    if not values or len(values) < 2:
+        return '<svg class="index-spark"></svg>'
+    w, h, pad = 200, 34, 3
+    lo, hi = min(values), max(values)
+    span = (hi - lo) or 1
+    n = len(values)
+    points = []
+    for i, v in enumerate(values):
+        x = pad + (w - 2 * pad) * i / (n - 1)
+        y = pad + (h - 2 * pad) * (1 - (v - lo) / span)
+        points.append(f"{x:.1f},{y:.1f}")
+    poly = " ".join(points)
+    fill_pts = f"{pad},{h-pad} " + poly + f" {w-pad},{h-pad}"
+    color = "var(--up)" if up else "var(--down)"
+    return (
+        f'<svg class="index-spark" viewBox="0 0 {w} {h}" preserveAspectRatio="none">'
+        f'<polygon points="{fill_pts}" fill="{color}" opacity="0.12"></polygon>'
+        f'<polyline points="{poly}" fill="none" stroke="{color}" stroke-width="1.6" '
+        f'stroke-linejoin="round" stroke-linecap="round"></polyline>'
+        f'</svg>'
+    )
+
+
+def render_index_row():
+    rows = fetch_us_major_indices()
+    cards = []
+    for r in rows:
+        if r["status"] != "ACTUAL":
+            cards.append(f'<div class="index-card"><div class="index-name">{r["name"]}</div>'
+                         f'<div class="muted-cell">MISSING</div></div>')
+            continue
+        up = r["change"] >= 0
+        cls = "up" if up else "down"
+        arrow = "▲" if up else ("▼" if r["change"] < 0 else "")
+        as_of = r["as_of_bar"][:16].replace("T", " ")
+        cards.append(
+            f'<div class="index-card"><div class="index-name">{r["name"]}</div>'
+            f'<div class="index-price mono">{r["price"]:,.2f}</div>'
+            f'<div class="index-change mono {cls}">{arrow} {r["change"]:+,.2f} ({r["change_pct"]:+.2f}%)</div>'
+            f'{render_sparkline_svg(r["sparkline"], up)}'
+            f'<div class="index-asof">{as_of} 기준 · yfinance</div>'
+            f'</div>'
+        )
+    return f'<div class="index-row">{"".join(cards)}</div>'
 
 
 def fmt_pct(v):
@@ -245,6 +304,8 @@ def build_html(trade_date):
   <div class="caveat">📌 이 스코어는 명세 7.1의 4개 구성요소(등락강도/거래금액강도/Breadth/핵심리더십)만 반영합니다. Catalyst(뉴스·실적)는 PHASE 5 대상이라 항상 제외되어 있어 모든 섹터가 PARTIAL 품질입니다.</div>
   <div class="disclaimer">본 리포트는 투자 조언이 아니며, 매수/매도 신호가 아닙니다. 데이터 출처: yfinance.</div>
 </div>
+
+{render_index_row()}
 
 <div class="hero">
   <div class="hero-kospi">
