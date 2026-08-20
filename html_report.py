@@ -14,6 +14,7 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
 import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 from adapters.us_adapter import fetch_us_major_indices
+from adapters.naver_world_adapter import fetch_us_major_indices_naver
 
 GEN_DIR = Path(__file__).parent / "data" / "generated"
 RUN_DIR = Path(__file__).parent / "data" / "prediction_runs"
@@ -157,7 +158,26 @@ def render_sparkline_svg(values, up):
 
 
 def render_index_row():
-    rows = fetch_us_major_indices()
+    # 1순위: Naver Finance world (사용자 요청 소스, Korean 이름/실시간 값 포함).
+    # 실패하는 지수만 yfinance로 보강한다 (완전 대체가 아니라 fallback).
+    try:
+        rows = fetch_us_major_indices_naver()
+    except Exception:
+        rows = [{"name": n, "status": "MISSING"} for n in ("다우산업", "나스닥종합", "S&P 500")]
+
+    missing_names = {r["name"] for r in rows if r["status"] != "ACTUAL"}
+    if missing_names:
+        try:
+            fallback = {r["name"]: r for r in fetch_us_major_indices() if r["status"] == "ACTUAL"}
+        except Exception:
+            fallback = {}
+        for r in rows:
+            if r["name"] in missing_names and r["name"] in fallback:
+                fb = fallback[r["name"]]
+                fb["source"] = "yfinance(fallback)"
+                r.clear()
+                r.update(fb)
+
     cards = []
     for r in rows:
         if r["status"] != "ACTUAL":
@@ -167,13 +187,14 @@ def render_index_row():
         up = r["change"] >= 0
         cls = "up" if up else "down"
         arrow = "▲" if up else ("▼" if r["change"] < 0 else "")
-        as_of = r["as_of_bar"][:16].replace("T", " ")
+        as_of = str(r["as_of_bar"])[:16].replace("T", " ")
+        source = r.get("source", "finance.naver.com/world")
         cards.append(
             f'<div class="index-card"><div class="index-name">{r["name"]}</div>'
             f'<div class="index-price mono">{r["price"]:,.2f}</div>'
             f'<div class="index-change mono {cls}">{arrow} {r["change"]:+,.2f} ({r["change_pct"]:+.2f}%)</div>'
             f'{render_sparkline_svg(r["sparkline"], up)}'
-            f'<div class="index-asof">{as_of} 기준 · yfinance</div>'
+            f'<div class="index-asof">{as_of} 기준 · {source}</div>'
             f'</div>'
         )
     return f'<div class="index-row">{"".join(cards)}</div>'
