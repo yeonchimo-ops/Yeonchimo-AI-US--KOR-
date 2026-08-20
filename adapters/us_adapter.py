@@ -8,6 +8,12 @@ import sys
 import warnings
 from datetime import datetime, timezone
 
+# curl_cffi(브라우저 TLS 지문)가 CCR 클라우드 프록시에서 TLS reset("curl: (35)")을 당해
+# 모든 티커 다운로드가 실패한다. yfinance 공식 스위치로 plain requests 백엔드를 강제한다
+# (프록시 CA는 REQUESTS_CA_BUNDLE로 이미 신뢰됨). 반드시 yfinance import 전에 설정해야 한다.
+if os.environ.get("CCR_AGENT_PROXY_ENABLED") or os.environ.get("HTTPS_PROXY"):
+    os.environ.setdefault("YF_DISABLE_CURL_CFFI", "1")
+
 import yfinance as yf
 
 # yfinance 기본 백엔드(curl_cffi, 브라우저 TLS 지문 흉내)가 Claude Code 클라우드 루틴(CCR)의

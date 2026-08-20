@@ -3,10 +3,17 @@
 # trade_date 하루에 한 번만 저장되는 불변 PREDICTION_RUN으로 남긴다.
 # 실제 07:00 KST 자동 실행(스케줄러 등록)은 이 스크립트 실행과는 별개의 결정이라 여기 포함하지 않았다.
 
+import os
 import sys
 import warnings
 from pathlib import Path
 from datetime import datetime, timezone
+
+# curl_cffi(브라우저 TLS 지문)가 CCR 클라우드 프록시에서 TLS reset("curl: (35)")을 당해
+# 모든 티커 다운로드가 실패한다. yfinance 공식 스위치로 plain requests 백엔드를 강제한다
+# (프록시 CA는 REQUESTS_CA_BUNDLE로 이미 신뢰됨). 반드시 yfinance import 전에 설정해야 한다.
+if os.environ.get("CCR_AGENT_PROXY_ENABLED") or os.environ.get("HTTPS_PROXY"):
+    os.environ.setdefault("YF_DISABLE_CURL_CFFI", "1")
 
 sys.path.insert(0, str(Path(__file__).parent))
 if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
