@@ -1,0 +1,524 @@
+[
+  {
+    "id": "MAP_AAPL_01_01",
+    "us_ticker": "AAPL",
+    "korea_name": "LG이노텍",
+    "priority": 1
+  },
+  {
+    "id": "MAP_AAPL_01_02",
+    "us_ticker": "AAPL",
+    "korea_name": "BH",
+    "priority": 2
+  },
+  {
+    "id": "MAP_AAPL_01_03",
+    "us_ticker": "AAPL",
+    "korea_name": "삼성전기",
+    "priority": 3
+  },
+  {
+    "id": "MAP_AAPL_01_04",
+    "us_ticker": "AAPL",
+    "korea_name": "LX세미콘",
+    "priority": 4
+  },
+  {
+    "id": "MAP_AMZN_01_01",
+    "us_ticker": "AMZN",
+    "korea_name": "이마트",
+    "priority": 1
+  },
+  {
+    "id": "MAP_AMZN_01_02",
+    "us_ticker": "AMZN",
+    "korea_name": "CJ대한통운",
+    "priority": 2
+  },
+  {
+    "id": "MAP_AMZN_01_03",
+    "us_ticker": "AMZN",
+    "korea_name": "서진시스템",
+    "priority": 3
+  },
+  {
+    "id": "MAP_AVGO_02_01",
+    "us_ticker": "AVGO",
+    "korea_name": "삼성전자",
+    "priority": 1
+  },
+  {
+    "id": "MAP_AVGO_02_02",
+    "us_ticker": "AVGO",
+    "korea_name": "SK하이닉스",
+    "priority": 2
+  },
+  {
+    "id": "MAP_AVGO_02_03",
+    "us_ticker": "AVGO",
+    "korea_name": "이수페타시스",
+    "priority": 3
+  },
+  {
+    "id": "MAP_AVGO_02_04",
+    "us_ticker": "AVGO",
+    "korea_name": "가온칩스",
+    "priority": 4
+  },
+  {
+    "id": "MAP_AVGO_02_05",
+    "us_ticker": "AVGO",
+    "korea_name": "에이직랜드",
+    "priority": 5
+  },
+  {
+    "id": "MAP_BEP_06_01",
+    "us_ticker": "BEP",
+    "korea_name": "SK이터닉스",
+    "priority": 1
+  },
+  {
+    "id": "MAP_BEP_06_02",
+    "us_ticker": "BEP",
+    "korea_name": "씨에스윈드",
+    "priority": 2
+  },
+  {
+    "id": "MAP_BEP_06_03",
+    "us_ticker": "BEP",
+    "korea_name": "SK오션플랜트",
+    "priority": 3
+  },
+  {
+    "id": "MAP_BEP_06_04",
+    "us_ticker": "BEP",
+    "korea_name": "대명에너지",
+    "priority": 4
+  },
+  {
+    "id": "MAP_BEP_06_05",
+    "us_ticker": "BEP",
+    "korea_name": "씨에스베어링",
+    "priority": 5
+  },
+  {
+    "id": "MAP_CIEN_07_01",
+    "us_ticker": "CIEN",
+    "korea_name": "성호전자",
+    "priority": 1
+  },
+  {
+    "id": "MAP_CIEN_07_02",
+    "us_ticker": "CIEN",
+    "korea_name": "오이솔루션",
+    "priority": 2
+  },
+  {
+    "id": "MAP_CIEN_07_03",
+    "us_ticker": "CIEN",
+    "korea_name": "대한광통신",
+    "priority": 3
+  },
+  {
+    "id": "MAP_CIEN_07_04",
+    "us_ticker": "CIEN",
+    "korea_name": "이수페타시스",
+    "priority": 4
+  },
+  {
+    "id": "MAP_COHR_07_01",
+    "us_ticker": "COHR",
+    "korea_name": "성호전자",
+    "priority": 1
+  },
+  {
+    "id": "MAP_COHR_07_02",
+    "us_ticker": "COHR",
+    "korea_name": "오이솔루션",
+    "priority": 2
+  },
+  {
+    "id": "MAP_COHR_07_03",
+    "us_ticker": "COHR",
+    "korea_name": "RF머트리얼즈",
+    "priority": 3
+  },
+  {
+    "id": "MAP_COHR_07_04",
+    "us_ticker": "COHR",
+    "korea_name": "대한광통신",
+    "priority": 4
+  },
+  {
+    "id": "MAP_COHR_07_05",
+    "us_ticker": "COHR",
+    "korea_name": "이수페타시스",
+    "priority": 5
+  },
+  {
+    "id": "MAP_CRCL_17_01",
+    "us_ticker": "CRCL",
+    "korea_name": "카카오페이",
+    "priority": 1
+  },
+  {
+    "id": "MAP_CRCL_17_02",
+    "us_ticker": "CRCL",
+    "korea_name": "다날",
+    "priority": 2
+  },
+  {
+    "id": "MAP_CRCL_17_03",
+    "us_ticker": "CRCL",
+    "korea_name": "헥토파이낸셜",
+    "priority": 3
+  },
+  {
+    "id": "MAP_CRCL_17_04",
+    "us_ticker": "CRCL",
+    "korea_name": "쿠콘",
+    "priority": 4
+  },
+  {
+    "id": "MAP_CRCL_17_05",
+    "us_ticker": "CRCL",
+    "korea_name": "NHN KCP",
+    "priority": 5
+  },
+  {
+    "id": "MAP_CRCL_17_06",
+    "us_ticker": "CRCL",
+    "korea_name": "코나아이",
+    "priority": 6
+  },
+  {
+    "id": "MAP_CWEN_06_01",
+    "us_ticker": "CWEN",
+    "korea_name": "SK이터닉스",
+    "priority": 1
+  },
+  {
+    "id": "MAP_CWEN_06_02",
+    "us_ticker": "CWEN",
+    "korea_name": "씨에스윈드",
+    "priority": 2
+  },
+  {
+    "id": "MAP_CWEN_06_03",
+    "us_ticker": "CWEN",
+    "korea_name": "대명에너지",
+    "priority": 3
+  },
+  {
+    "id": "MAP_CWEN_06_04",
+    "us_ticker": "CWEN",
+    "korea_name": "씨에스베어링",
+    "priority": 4
+  },
+  {
+    "id": "MAP_GE_06_01",
+    "us_ticker": "GE",
+    "korea_name": "SK이터닉스",
+    "priority": 1
+  },
+  {
+    "id": "MAP_GE_06_02",
+    "us_ticker": "GE",
+    "korea_name": "씨에스윈드",
+    "priority": 2
+  },
+  {
+    "id": "MAP_GE_06_03",
+    "us_ticker": "GE",
+    "korea_name": "씨에스베어링",
+    "priority": 3
+  },
+  {
+    "id": "MAP_GE_06_04",
+    "us_ticker": "GE",
+    "korea_name": "두산에너빌리티",
+    "priority": 4
+  },
+  {
+    "id": "MAP_GE_06_05",
+    "us_ticker": "GE",
+    "korea_name": "유니슨",
+    "priority": 5
+  },
+  {
+    "id": "MAP_GLW_07_01",
+    "us_ticker": "GLW",
+    "korea_name": "성호전자",
+    "priority": 1
+  },
+  {
+    "id": "MAP_GLW_07_02",
+    "us_ticker": "GLW",
+    "korea_name": "대한광통신",
+    "priority": 2
+  },
+  {
+    "id": "MAP_GLW_07_03",
+    "us_ticker": "GLW",
+    "korea_name": "LS마린솔루션",
+    "priority": 3
+  },
+  {
+    "id": "MAP_GLW_07_04",
+    "us_ticker": "GLW",
+    "korea_name": "가온전선",
+    "priority": 4
+  },
+  {
+    "id": "MAP_GOOGL_01_01",
+    "us_ticker": "GOOGL",
+    "korea_name": "NAVER",
+    "priority": 1
+  },
+  {
+    "id": "MAP_GOOGL_01_02",
+    "us_ticker": "GOOGL",
+    "korea_name": "카카오",
+    "priority": 2
+  },
+  {
+    "id": "MAP_GOOGL_01_03",
+    "us_ticker": "GOOGL",
+    "korea_name": "삼성SDS",
+    "priority": 3
+  },
+  {
+    "id": "MAP_GOOGL_01_04",
+    "us_ticker": "GOOGL",
+    "korea_name": "HD현대일렉트릭",
+    "priority": 4
+  },
+  {
+    "id": "MAP_LITE_07_01",
+    "us_ticker": "LITE",
+    "korea_name": "성호전자",
+    "priority": 1
+  },
+  {
+    "id": "MAP_LITE_07_02",
+    "us_ticker": "LITE",
+    "korea_name": "RF머트리얼즈",
+    "priority": 2
+  },
+  {
+    "id": "MAP_LITE_07_03",
+    "us_ticker": "LITE",
+    "korea_name": "오이솔루션",
+    "priority": 3
+  },
+  {
+    "id": "MAP_LITE_07_04",
+    "us_ticker": "LITE",
+    "korea_name": "대한광통신",
+    "priority": 4
+  },
+  {
+    "id": "MAP_LITE_07_05",
+    "us_ticker": "LITE",
+    "korea_name": "이수페타시스",
+    "priority": 5
+  },
+  {
+    "id": "MAP_LLY_12_01",
+    "us_ticker": "LLY",
+    "korea_name": "펩트론",
+    "priority": 1
+  },
+  {
+    "id": "MAP_LLY_12_02",
+    "us_ticker": "LLY",
+    "korea_name": "한미약품",
+    "priority": 2
+  },
+  {
+    "id": "MAP_LLY_12_03",
+    "us_ticker": "LLY",
+    "korea_name": "삼성바이오로직스",
+    "priority": 3
+  },
+  {
+    "id": "MAP_LLY_12_04",
+    "us_ticker": "LLY",
+    "korea_name": "에이비엘바이오",
+    "priority": 4
+  },
+  {
+    "id": "MAP_META_01_01",
+    "us_ticker": "META",
+    "korea_name": "뉴프렉스",
+    "priority": 1
+  },
+  {
+    "id": "MAP_META_01_02",
+    "us_ticker": "META",
+    "korea_name": "선익시스템",
+    "priority": 2
+  },
+  {
+    "id": "MAP_META_01_03",
+    "us_ticker": "META",
+    "korea_name": "NAVER",
+    "priority": 3
+  },
+  {
+    "id": "MAP_MRVL_02_01",
+    "us_ticker": "MRVL",
+    "korea_name": "SK하이닉스",
+    "priority": 1
+  },
+  {
+    "id": "MAP_MRVL_02_02",
+    "us_ticker": "MRVL",
+    "korea_name": "삼성전자",
+    "priority": 2
+  },
+  {
+    "id": "MAP_MRVL_02_03",
+    "us_ticker": "MRVL",
+    "korea_name": "이수페타시스",
+    "priority": 3
+  },
+  {
+    "id": "MAP_MRVL_02_04",
+    "us_ticker": "MRVL",
+    "korea_name": "ISC",
+    "priority": 4
+  },
+  {
+    "id": "MAP_MRVL_02_05",
+    "us_ticker": "MRVL",
+    "korea_name": "삼성전기",
+    "priority": 5
+  },
+  {
+    "id": "MAP_MSFT_01_01",
+    "us_ticker": "MSFT",
+    "korea_name": "NAVER",
+    "priority": 1
+  },
+  {
+    "id": "MAP_MSFT_01_02",
+    "us_ticker": "MSFT",
+    "korea_name": "카카오",
+    "priority": 2
+  },
+  {
+    "id": "MAP_MSFT_01_03",
+    "us_ticker": "MSFT",
+    "korea_name": "한글과컴퓨터",
+    "priority": 3
+  },
+  {
+    "id": "MAP_MSFT_01_04",
+    "us_ticker": "MSFT",
+    "korea_name": "리노공업",
+    "priority": 4
+  },
+  {
+    "id": "MAP_NEE_06_01",
+    "us_ticker": "NEE",
+    "korea_name": "SK이터닉스",
+    "priority": 1
+  },
+  {
+    "id": "MAP_NEE_06_02",
+    "us_ticker": "NEE",
+    "korea_name": "씨에스윈드",
+    "priority": 2
+  },
+  {
+    "id": "MAP_NEE_06_03",
+    "us_ticker": "NEE",
+    "korea_name": "두산에너빌리티",
+    "priority": 3
+  },
+  {
+    "id": "MAP_NEE_06_04",
+    "us_ticker": "NEE",
+    "korea_name": "씨에스베어링",
+    "priority": 4
+  },
+  {
+    "id": "MAP_NEE_06_05",
+    "us_ticker": "NEE",
+    "korea_name": "대명에너지",
+    "priority": 5
+  },
+  {
+    "id": "MAP_NVDA_01_01",
+    "us_ticker": "NVDA",
+    "korea_name": "SK하이닉스",
+    "priority": 1
+  },
+  {
+    "id": "MAP_NVDA_01_02",
+    "us_ticker": "NVDA",
+    "korea_name": "삼성전자",
+    "priority": 2
+  },
+  {
+    "id": "MAP_NVDA_01_03",
+    "us_ticker": "NVDA",
+    "korea_name": "한미반도체",
+    "priority": 3
+  },
+  {
+    "id": "MAP_NVDA_01_04",
+    "us_ticker": "NVDA",
+    "korea_name": "이수페타시스",
+    "priority": 4
+  },
+  {
+    "id": "MAP_NVDA_01_05",
+    "us_ticker": "NVDA",
+    "korea_name": "HD현대일렉트릭",
+    "priority": 5
+  },
+  {
+    "id": "MAP_SKHY_02_01",
+    "us_ticker": "SKHY",
+    "korea_name": "SK하이닉스",
+    "priority": 1
+  },
+  {
+    "id": "MAP_SKHY_02_02",
+    "us_ticker": "SKHY",
+    "korea_name": "삼성전자",
+    "priority": 2
+  },
+  {
+    "id": "MAP_TSLA_01_01",
+    "us_ticker": "TSLA",
+    "korea_name": "LG에너지솔루션",
+    "priority": 1
+  },
+  {
+    "id": "MAP_TSLA_01_02",
+    "us_ticker": "TSLA",
+    "korea_name": "POSCO홀딩스",
+    "priority": 2
+  },
+  {
+    "id": "MAP_TSLA_01_03",
+    "us_ticker": "TSLA",
+    "korea_name": "에코프로비엠",
+    "priority": 3
+  },
+  {
+    "id": "MAP_TSLA_01_04",
+    "us_ticker": "TSLA",
+    "korea_name": "엘앤에프",
+    "priority": 4
+  },
+  {
+    "id": "MAP_TSLA_01_05",
+    "us_ticker": "TSLA",
+    "korea_name": "현대모비스",
+    "priority": 5
+  }
+]

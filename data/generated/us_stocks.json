@@ -1,0 +1,514 @@
+[
+  {
+    "ticker": "AAPL",
+    "name": "Apple Inc.",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "AIFF",
+    "name": "표시값 보존 (재검증 필요)",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": "소스 시스템 표시값 보존. 상장 여부/정확한 티커 재검증 필요 (명세 3.2)"
+  },
+  {
+    "ticker": "ALB",
+    "name": "Albemarle Corporation",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "AMD",
+    "name": "Advanced Micro Devices Inc.",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "AMZN",
+    "name": "Amazon.com Inc.",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "ASML",
+    "name": "ASML Holding (ADR)",
+    "asset_type": "ADR",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "ASTS",
+    "name": "AST SpaceMobile Inc.",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "AVGO",
+    "name": "Broadcom Inc.",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "BE",
+    "name": "Bloom Energy Corporation",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "BEP",
+    "name": "Brookfield Renewable Partners",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "CEG",
+    "name": "Constellation Energy Corporation",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "CIEN",
+    "name": "Ciena Corporation",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "COHR",
+    "name": "Coherent Corp.",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "COIN",
+    "name": "Coinbase Global Inc.",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "CRCL",
+    "name": "Circle Internet Group Inc.",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "CWEN",
+    "name": "Clearway Energy Inc.",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "ENPH",
+    "name": "Enphase Energy Inc.",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "FLY",
+    "name": "표시값 보존 (재검증 필요)",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": "소스 시스템 표시값 보존. 상장 여부/정확한 티커 재검증 필요 (명세 3.2)"
+  },
+  {
+    "ticker": "FSLR",
+    "name": "First Solar Inc.",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "GE",
+    "name": "General Electric Company",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": "HTS 원본 풍력 목록 보존용. 실제 풍력사업 직접 신호는 GEV가 더 적합하나 자동 치환하지 않음 (명세 3.2)"
+  },
+  {
+    "ticker": "GEV",
+    "name": "GE Vernova Inc.",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "GLW",
+    "name": "Corning Incorporated",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "GLXY",
+    "name": "Galaxy Digital Inc.",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "GOOGL",
+    "name": "Alphabet Inc. Class A",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "INTC",
+    "name": "Intel Corporation",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "IONQ",
+    "name": "IonQ Inc.",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "LAC",
+    "name": "Lithium Americas Corp.",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "LCID",
+    "name": "Lucid Group Inc.",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "LIT",
+    "name": "Global X Lithium & Battery Tech ETF",
+    "asset_type": "ETF",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "LITE",
+    "name": "Lumentum Holdings Inc.",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "LLY",
+    "name": "Eli Lilly and Company",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "LMT",
+    "name": "Lockheed Martin Corporation",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "LUNR",
+    "name": "Intuitive Machines Inc.",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "MARA",
+    "name": "MARA Holdings Inc.",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "META",
+    "name": "Meta Platforms Inc.",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "MRNA",
+    "name": "Moderna Inc.",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "MRVL",
+    "name": "Marvell Technology Inc.",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "MSFT",
+    "name": "Microsoft Corporation",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "MSTR",
+    "name": "Strategy Inc. (구 MicroStrategy)",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "MU",
+    "name": "Micron Technology Inc.",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "NEE",
+    "name": "NextEra Energy Inc.",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "NVDA",
+    "name": "NVIDIA Corporation",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "NVO",
+    "name": "Novo Nordisk (ADR)",
+    "asset_type": "ADR",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "OKLO",
+    "name": "Oklo Inc.",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "ORCL",
+    "name": "Oracle Corporation",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "PFE",
+    "name": "Pfizer Inc.",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "PL",
+    "name": "Planet Labs PBC",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "PLTR",
+    "name": "Palantir Technologies Inc.",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "QBTS",
+    "name": "D-Wave Quantum Inc.",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "RGTI",
+    "name": "Rigetti Computing Inc.",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "RIVN",
+    "name": "Rivian Automotive Inc.",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "RKLB",
+    "name": "Rocket Lab USA Inc.",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "SKHY",
+    "name": "SK hynix (ADR 표시값)",
+    "asset_type": "ADR",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": "미국시장 SK하이닉스 직접 선행 신호로 취급하는 표시값. 실제 ADR 상장 여부 재검증 필요"
+  },
+  {
+    "ticker": "SMR",
+    "name": "NuScale Power Corporation",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "SNDK",
+    "name": "SanDisk Corporation",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "SOXL",
+    "name": "Direxion Daily Semiconductor Bull 3X Shares",
+    "asset_type": "ETF",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "SOXS",
+    "name": "Direxion Daily Semiconductor Bear 3X Shares",
+    "asset_type": "ETF",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "SPCX",
+    "name": "SpaceX (표시값, 상장상태 재검증 필요)",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": "소스 시스템 표시값 보존. 상장 여부/정확한 티커 재검증 필요 (명세 3.2)"
+  },
+  {
+    "ticker": "STX",
+    "name": "Seagate Technology Holdings",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "TAN",
+    "name": "Invesco Solar ETF",
+    "asset_type": "ETF",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "TSLA",
+    "name": "Tesla Inc.",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "TSM",
+    "name": "Taiwan Semiconductor Manufacturing (ADR)",
+    "asset_type": "ADR",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "TXN",
+    "name": "Texas Instruments Inc.",
+    "asset_type": "EQUITY",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  },
+  {
+    "ticker": "URA",
+    "name": "Global X Uranium ETF",
+    "asset_type": "ETF",
+    "exchange": null,
+    "is_active": true,
+    "validation_warning": null
+  }
+]

@@ -1,0 +1,204 @@
+[
+  {
+    "id": "US_01_M7",
+    "name": "M7",
+    "display_order": 1,
+    "us_stocks": [
+      "NVDA",
+      "AAPL",
+      "MSFT",
+      "GOOGL",
+      "AMZN",
+      "META",
+      "TSLA"
+    ],
+    "status": "CONFIRMED_USER"
+  },
+  {
+    "id": "US_02_SEMICONDUCTOR",
+    "name": "반도체",
+    "display_order": 2,
+    "us_stocks": [
+      "SKHY",
+      "MU",
+      "SNDK",
+      "MRVL",
+      "STX",
+      "TSM",
+      "AVGO",
+      "AMD",
+      "INTC",
+      "TXN",
+      "ASML"
+    ],
+    "status": "CONFIRMED_USER"
+  },
+  {
+    "id": "US_03_POWER_EQUIPMENT",
+    "name": "발전설비",
+    "display_order": 3,
+    "us_stocks": [
+      "GEV"
+    ],
+    "status": "CONFIRMED_USER"
+  },
+  {
+    "id": "US_04_NUCLEAR_SMR",
+    "name": "원전·SMR",
+    "display_order": 4,
+    "us_stocks": [
+      "SMR",
+      "OKLO",
+      "CEG",
+      "URA"
+    ],
+    "status": "CONFIRMED_USER"
+  },
+  {
+    "id": "US_05_SOLAR",
+    "name": "태양광",
+    "display_order": 5,
+    "us_stocks": [
+      "ENPH",
+      "TAN",
+      "NEE",
+      "FSLR"
+    ],
+    "status": "CONFIRMED_USER"
+  },
+  {
+    "id": "US_06_WIND",
+    "name": "풍력",
+    "display_order": 6,
+    "us_stocks": [
+      "NEE",
+      "GE",
+      "CWEN",
+      "BEP"
+    ],
+    "status": "CONFIRMED_USER"
+  },
+  {
+    "id": "US_07_OPTICAL",
+    "name": "광통신",
+    "display_order": 7,
+    "us_stocks": [
+      "LITE",
+      "COHR",
+      "GLW",
+      "CIEN"
+    ],
+    "status": "CONFIRMED_USER"
+  },
+  {
+    "id": "US_08_DEFENSE",
+    "name": "방산",
+    "display_order": 8,
+    "us_stocks": [
+      "LMT"
+    ],
+    "status": "CONFIRMED_USER"
+  },
+  {
+    "id": "US_09_AEROSPACE",
+    "name": "우주항공",
+    "display_order": 9,
+    "us_stocks": [
+      "SPCX",
+      "RKLB",
+      "ASTS",
+      "AIFF",
+      "FLY",
+      "LUNR",
+      "PL"
+    ],
+    "status": "CONFIRMED_USER"
+  },
+  {
+    "id": "US_10_LITHIUM",
+    "name": "리튬",
+    "display_order": 10,
+    "us_stocks": [
+      "ALB",
+      "LAC",
+      "LIT"
+    ],
+    "status": "CONFIRMED_USER"
+  },
+  {
+    "id": "US_11_SOFC",
+    "name": "SOFC·친환경",
+    "display_order": 11,
+    "us_stocks": [
+      "BE"
+    ],
+    "status": "CONFIRMED_USER"
+  },
+  {
+    "id": "US_12_PHARMA_BIO",
+    "name": "제약·바이오",
+    "display_order": 12,
+    "us_stocks": [
+      "MRNA",
+      "LLY",
+      "NVO",
+      "PFE"
+    ],
+    "status": "CONFIRMED_USER"
+  },
+  {
+    "id": "US_13_SEMI_ETF",
+    "name": "반도체 ETF",
+    "display_order": 13,
+    "us_stocks": [
+      "SOXL",
+      "SOXS"
+    ],
+    "status": "CONFIRMED_USER"
+  },
+  {
+    "id": "US_14_AI_SOFTWARE",
+    "name": "AI·소프트웨어",
+    "display_order": 14,
+    "us_stocks": [
+      "PLTR",
+      "ORCL"
+    ],
+    "status": "CONFIRMED_USER"
+  },
+  {
+    "id": "US_15_QUANTUM",
+    "name": "양자컴퓨터",
+    "display_order": 15,
+    "us_stocks": [
+      "IONQ",
+      "RGTI",
+      "QBTS"
+    ],
+    "status": "CONFIRMED_USER"
+  },
+  {
+    "id": "US_16_EV",
+    "name": "전기차",
+    "display_order": 16,
+    "us_stocks": [
+      "TSLA",
+      "RIVN",
+      "LCID"
+    ],
+    "status": "CONFIRMED_USER"
+  },
+  {
+    "id": "US_17_CRYPTO",
+    "name": "가상화폐",
+    "display_order": 17,
+    "us_stocks": [
+      "MSTR",
+      "MARA",
+      "COIN",
+      "GLXY",
+      "CRCL"
+    ],
+    "status": "CONFIRMED_USER"
+  }
+]

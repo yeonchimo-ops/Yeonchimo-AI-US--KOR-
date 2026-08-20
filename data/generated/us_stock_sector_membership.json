@@ -1,0 +1,464 @@
+[
+  {
+    "us_ticker": "NVDA",
+    "us_sector_id": "US_01_M7",
+    "display_order": 1,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "AAPL",
+    "us_sector_id": "US_01_M7",
+    "display_order": 2,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "MSFT",
+    "us_sector_id": "US_01_M7",
+    "display_order": 3,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "GOOGL",
+    "us_sector_id": "US_01_M7",
+    "display_order": 4,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "AMZN",
+    "us_sector_id": "US_01_M7",
+    "display_order": 5,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "META",
+    "us_sector_id": "US_01_M7",
+    "display_order": 6,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "TSLA",
+    "us_sector_id": "US_01_M7",
+    "display_order": 7,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "SKHY",
+    "us_sector_id": "US_02_SEMICONDUCTOR",
+    "display_order": 1,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "MU",
+    "us_sector_id": "US_02_SEMICONDUCTOR",
+    "display_order": 2,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "SNDK",
+    "us_sector_id": "US_02_SEMICONDUCTOR",
+    "display_order": 3,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "MRVL",
+    "us_sector_id": "US_02_SEMICONDUCTOR",
+    "display_order": 4,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "STX",
+    "us_sector_id": "US_02_SEMICONDUCTOR",
+    "display_order": 5,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "TSM",
+    "us_sector_id": "US_02_SEMICONDUCTOR",
+    "display_order": 6,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "AVGO",
+    "us_sector_id": "US_02_SEMICONDUCTOR",
+    "display_order": 7,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "AMD",
+    "us_sector_id": "US_02_SEMICONDUCTOR",
+    "display_order": 8,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "INTC",
+    "us_sector_id": "US_02_SEMICONDUCTOR",
+    "display_order": 9,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "TXN",
+    "us_sector_id": "US_02_SEMICONDUCTOR",
+    "display_order": 10,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "ASML",
+    "us_sector_id": "US_02_SEMICONDUCTOR",
+    "display_order": 11,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "GEV",
+    "us_sector_id": "US_03_POWER_EQUIPMENT",
+    "display_order": 1,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "SMR",
+    "us_sector_id": "US_04_NUCLEAR_SMR",
+    "display_order": 1,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "OKLO",
+    "us_sector_id": "US_04_NUCLEAR_SMR",
+    "display_order": 2,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "CEG",
+    "us_sector_id": "US_04_NUCLEAR_SMR",
+    "display_order": 3,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "URA",
+    "us_sector_id": "US_04_NUCLEAR_SMR",
+    "display_order": 4,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "ENPH",
+    "us_sector_id": "US_05_SOLAR",
+    "display_order": 1,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "TAN",
+    "us_sector_id": "US_05_SOLAR",
+    "display_order": 2,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "NEE",
+    "us_sector_id": "US_05_SOLAR",
+    "display_order": 3,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "FSLR",
+    "us_sector_id": "US_05_SOLAR",
+    "display_order": 4,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "NEE",
+    "us_sector_id": "US_06_WIND",
+    "display_order": 1,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "GE",
+    "us_sector_id": "US_06_WIND",
+    "display_order": 2,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "CWEN",
+    "us_sector_id": "US_06_WIND",
+    "display_order": 3,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "BEP",
+    "us_sector_id": "US_06_WIND",
+    "display_order": 4,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "LITE",
+    "us_sector_id": "US_07_OPTICAL",
+    "display_order": 1,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "COHR",
+    "us_sector_id": "US_07_OPTICAL",
+    "display_order": 2,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "GLW",
+    "us_sector_id": "US_07_OPTICAL",
+    "display_order": 3,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "CIEN",
+    "us_sector_id": "US_07_OPTICAL",
+    "display_order": 4,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "LMT",
+    "us_sector_id": "US_08_DEFENSE",
+    "display_order": 1,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "SPCX",
+    "us_sector_id": "US_09_AEROSPACE",
+    "display_order": 1,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "RKLB",
+    "us_sector_id": "US_09_AEROSPACE",
+    "display_order": 2,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "ASTS",
+    "us_sector_id": "US_09_AEROSPACE",
+    "display_order": 3,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "AIFF",
+    "us_sector_id": "US_09_AEROSPACE",
+    "display_order": 4,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "FLY",
+    "us_sector_id": "US_09_AEROSPACE",
+    "display_order": 5,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "LUNR",
+    "us_sector_id": "US_09_AEROSPACE",
+    "display_order": 6,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "PL",
+    "us_sector_id": "US_09_AEROSPACE",
+    "display_order": 7,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "ALB",
+    "us_sector_id": "US_10_LITHIUM",
+    "display_order": 1,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "LAC",
+    "us_sector_id": "US_10_LITHIUM",
+    "display_order": 2,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "LIT",
+    "us_sector_id": "US_10_LITHIUM",
+    "display_order": 3,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "BE",
+    "us_sector_id": "US_11_SOFC",
+    "display_order": 1,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "MRNA",
+    "us_sector_id": "US_12_PHARMA_BIO",
+    "display_order": 1,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "LLY",
+    "us_sector_id": "US_12_PHARMA_BIO",
+    "display_order": 2,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "NVO",
+    "us_sector_id": "US_12_PHARMA_BIO",
+    "display_order": 3,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "PFE",
+    "us_sector_id": "US_12_PHARMA_BIO",
+    "display_order": 4,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "SOXL",
+    "us_sector_id": "US_13_SEMI_ETF",
+    "display_order": 1,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "SOXS",
+    "us_sector_id": "US_13_SEMI_ETF",
+    "display_order": 2,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "PLTR",
+    "us_sector_id": "US_14_AI_SOFTWARE",
+    "display_order": 1,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "ORCL",
+    "us_sector_id": "US_14_AI_SOFTWARE",
+    "display_order": 2,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "IONQ",
+    "us_sector_id": "US_15_QUANTUM",
+    "display_order": 1,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "RGTI",
+    "us_sector_id": "US_15_QUANTUM",
+    "display_order": 2,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "QBTS",
+    "us_sector_id": "US_15_QUANTUM",
+    "display_order": 3,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "TSLA",
+    "us_sector_id": "US_16_EV",
+    "display_order": 1,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "RIVN",
+    "us_sector_id": "US_16_EV",
+    "display_order": 2,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "LCID",
+    "us_sector_id": "US_16_EV",
+    "display_order": 3,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "MSTR",
+    "us_sector_id": "US_17_CRYPTO",
+    "display_order": 1,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "MARA",
+    "us_sector_id": "US_17_CRYPTO",
+    "display_order": 2,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "COIN",
+    "us_sector_id": "US_17_CRYPTO",
+    "display_order": 3,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "GLXY",
+    "us_sector_id": "US_17_CRYPTO",
+    "display_order": 4,
+    "role": "MEMBER",
+    "is_active": true
+  },
+  {
+    "us_ticker": "CRCL",
+    "us_sector_id": "US_17_CRYPTO",
+    "display_order": 5,
+    "role": "MEMBER",
+    "is_active": true
+  }
+]

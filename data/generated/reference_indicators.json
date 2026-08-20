@@ -1,0 +1,12 @@
+[
+  {
+    "ticker": "BTC",
+    "name": "Bitcoin",
+    "asset_type": "CRYPTO_REFERENCE"
+  },
+  {
+    "ticker": "ETH",
+    "name": "Ethereum",
+    "asset_type": "CRYPTO_REFERENCE"
+  }
+]

@@ -1,0 +1,738 @@
+[
+  {
+    "korea_name": "HD현대에너지솔루션",
+    "korea_ticker": "322000",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "태양광",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "OCI홀딩스",
+    "korea_ticker": "010060",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "태양광",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "주성엔지니어링",
+    "korea_ticker": "036930",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "태양광",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "한화솔루션",
+    "korea_ticker": "009830",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "태양광",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "신성이엔지",
+    "korea_ticker": "011930",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "태양광",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "선익시스템",
+    "korea_ticker": "171090",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "태양광",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "유니테스트",
+    "korea_ticker": "086390",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "태양광",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "에스에너지",
+    "korea_ticker": "095910",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "태양광",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "엘케이켐",
+    "korea_ticker": "489500",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "태양광",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "금양그린파워",
+    "korea_ticker": "282720",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "태양광",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "대명에너지",
+    "korea_ticker": "389260",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "태양광",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "SK이터닉스",
+    "korea_ticker": "475150",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "태양광",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "파루",
+    "korea_ticker": "043200",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "태양광",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "파인테크닉스",
+    "korea_ticker": null,
+    "ticker_resolution_status": "REQUIRED_BEFORE_IMPORT",
+    "korea_sector_pool": "태양광",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "씨에스윈드",
+    "korea_ticker": "112610",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "풍력",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "SK오션플랜트",
+    "korea_ticker": "100090",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "풍력",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "씨에스베어링",
+    "korea_ticker": "297090",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "풍력",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "두산에너빌리티",
+    "korea_ticker": "034020",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "풍력",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "LS마린솔루션",
+    "korea_ticker": "060370",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "풍력",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "세진중공업",
+    "korea_ticker": "075580",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "풍력",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "태웅",
+    "korea_ticker": "044490",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "풍력",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "동국S&C",
+    "korea_ticker": "100130",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "풍력",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "동국산업",
+    "korea_ticker": "005160",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "풍력",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "삼영엠텍",
+    "korea_ticker": "054540",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "풍력",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "대창솔루션",
+    "korea_ticker": "096350",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "풍력",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "대명에너지",
+    "korea_ticker": "389260",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "풍력",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "금양그린파워",
+    "korea_ticker": "282720",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "풍력",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "SK이터닉스",
+    "korea_ticker": "475150",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "풍력",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "유니슨",
+    "korea_ticker": "018000",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "풍력",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "두산퓨얼셀",
+    "korea_ticker": "336260",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "SOFC·친환경",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "RFHIC",
+    "korea_ticker": "218410",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "SOFC·친환경",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "RF머트리얼즈",
+    "korea_ticker": "327260",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "SOFC·친환경",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "비나텍",
+    "korea_ticker": "126340",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "SOFC·친환경",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "코세스",
+    "korea_ticker": "089890",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "SOFC·친환경",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "코스텍시스",
+    "korea_ticker": "355150",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "SOFC·친환경",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "범한퓨얼셀",
+    "korea_ticker": "382900",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "SOFC·친환경",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "웨이비스",
+    "korea_ticker": "289930",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "SOFC·친환경",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "에이프로",
+    "korea_ticker": "262260",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "SOFC·친환경",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "마이언티바이오",
+    "korea_ticker": null,
+    "ticker_resolution_status": "REQUIRED_BEFORE_IMPORT",
+    "korea_sector_pool": "SOFC·친환경",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "SK이터닉스",
+    "korea_ticker": "475150",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "SOFC·친환경",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "아모센스",
+    "korea_ticker": "357580",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "SOFC·친환경",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "나이벡",
+    "korea_ticker": "138610",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "mRNA",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "마이진",
+    "korea_ticker": null,
+    "ticker_resolution_status": "REQUIRED_BEFORE_IMPORT",
+    "korea_sector_pool": "mRNA",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "에스티팜",
+    "korea_ticker": "237690",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "mRNA",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "큐라티스",
+    "korea_ticker": "348080",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "mRNA",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "올릭스",
+    "korea_ticker": "226950",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "mRNA",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "서린바이오",
+    "korea_ticker": null,
+    "ticker_resolution_status": "REQUIRED_BEFORE_IMPORT",
+    "korea_sector_pool": "mRNA",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "파미셀",
+    "korea_ticker": "005690",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "mRNA",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "녹십자",
+    "korea_ticker": "006280",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "mRNA",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "한미약품",
+    "korea_ticker": "128940",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "mRNA",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "이연제약",
+    "korea_ticker": null,
+    "ticker_resolution_status": "REQUIRED_BEFORE_IMPORT",
+    "korea_sector_pool": "mRNA",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "진원생명과학",
+    "korea_ticker": "011000",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "mRNA",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "삼성에스디에스",
+    "korea_ticker": "018260",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "AI·소프트웨어",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "현대오토에버",
+    "korea_ticker": "307950",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "AI·소프트웨어",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "LG CNS",
+    "korea_ticker": "064400",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "AI·소프트웨어",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "포스코DX",
+    "korea_ticker": "022100",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "AI·소프트웨어",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "NHN",
+    "korea_ticker": "181710",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "AI·소프트웨어",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "아이티센글로벌",
+    "korea_ticker": "124500",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "AI·소프트웨어",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "클로봇",
+    "korea_ticker": "466100",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "AI·소프트웨어",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "롯데이노베이트",
+    "korea_ticker": "286940",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "AI·소프트웨어",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "신세계I&C",
+    "korea_ticker": null,
+    "ticker_resolution_status": "REQUIRED_BEFORE_IMPORT",
+    "korea_sector_pool": "AI·소프트웨어",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "마이크로디지탈",
+    "korea_ticker": null,
+    "ticker_resolution_status": "REQUIRED_BEFORE_IMPORT",
+    "korea_sector_pool": "AI·소프트웨어",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "엑셈",
+    "korea_ticker": "205100",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "AI·소프트웨어",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "비트플래닛",
+    "korea_ticker": "049470",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "AI·소프트웨어",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "SGA솔루션즈",
+    "korea_ticker": "184230",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "AI·소프트웨어",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "아톤",
+    "korea_ticker": "158430",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "양자컴퓨터·보안",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "가비아",
+    "korea_ticker": "079940",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "양자컴퓨터·보안",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "엑스게이트",
+    "korea_ticker": "356680",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "양자컴퓨터·보안",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "드림시큐리티",
+    "korea_ticker": "203650",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "양자컴퓨터·보안",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "라온시큐어",
+    "korea_ticker": "042510",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "양자컴퓨터·보안",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "케이사인",
+    "korea_ticker": "192250",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "양자컴퓨터·보안",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "SGA솔루션즈",
+    "korea_ticker": "184230",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "양자컴퓨터·보안",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "KCS",
+    "korea_ticker": "115500",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "양자컴퓨터·보안",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "우리로",
+    "korea_ticker": "046970",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "양자컴퓨터·보안",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "쏠리드",
+    "korea_ticker": "050890",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "양자컴퓨터·보안",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "카카오",
+    "korea_ticker": "035720",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "스테이블코인",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "카카오페이",
+    "korea_ticker": "377300",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "스테이블코인",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "아이티센글로벌",
+    "korea_ticker": "124500",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "스테이블코인",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "코나아이",
+    "korea_ticker": "052400",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "스테이블코인",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "NHN KCP",
+    "korea_ticker": "060250",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "스테이블코인",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "다날",
+    "korea_ticker": "064260",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "스테이블코인",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "제주은행",
+    "korea_ticker": "006220",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "스테이블코인",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "헥토파이낸셜",
+    "korea_ticker": "234340",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "스테이블코인",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "쿠콘",
+    "korea_ticker": "294570",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "스테이블코인",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "갤럭시아머니트리",
+    "korea_ticker": "094480",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "스테이블코인",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "더즌",
+    "korea_ticker": "462860",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "스테이블코인",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "핑거",
+    "korea_ticker": "163730",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "스테이블코인",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "아톤",
+    "korea_ticker": "158430",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "스테이블코인",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "서울옥션",
+    "korea_ticker": "063170",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "스테이블코인",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "미투온",
+    "korea_ticker": "201490",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "스테이블코인",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "뱅크웨어글로벌",
+    "korea_ticker": "199480",
+    "ticker_resolution_status": "RESOLVED",
+    "korea_sector_pool": "스테이블코인",
+    "source": "USER_HTS",
+    "is_active": true
+  },
+  {
+    "korea_name": "아이티센피엔",
+    "korea_ticker": null,
+    "ticker_resolution_status": "REQUIRED_BEFORE_IMPORT",
+    "korea_sector_pool": "스테이블코인",
+    "source": "USER_HTS",
+    "is_active": true
+  }
+]

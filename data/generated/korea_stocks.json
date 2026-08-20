@@ -1,0 +1,1664 @@
+[
+  {
+    "name": "AP위성",
+    "ticker": "211270",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "BH",
+    "ticker": "090460",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "CJ대한통운",
+    "ticker": "000120",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "DB하이텍",
+    "ticker": "000990",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "GS",
+    "ticker": "006360",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "HD현대에너지솔루션",
+    "ticker": "322000",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:태양광"
+    ]
+  },
+  {
+    "name": "HD현대일렉트릭",
+    "ticker": "267260",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "ISC",
+    "ticker": "095340",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "KCS",
+    "ticker": "115500",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:양자컴퓨터·보안"
+    ]
+  },
+  {
+    "name": "LG CNS",
+    "ticker": "064400",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:AI·소프트웨어"
+    ]
+  },
+  {
+    "name": "LG에너지솔루션",
+    "ticker": "373220",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "LG이노텍",
+    "ticker": "011070",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "LIG넥스원",
+    "ticker": "079550",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "LS ELECTRIC",
+    "ticker": "010120",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "LS마린솔루션",
+    "ticker": "060370",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:풍력"
+    ]
+  },
+  {
+    "name": "LX세미콘",
+    "ticker": "108320",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "NAVER",
+    "ticker": "035420",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "NHN",
+    "ticker": "181710",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:AI·소프트웨어"
+    ]
+  },
+  {
+    "name": "NHN KCP",
+    "ticker": "060250",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:스테이블코인"
+    ]
+  },
+  {
+    "name": "OCI홀딩스",
+    "ticker": "010060",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:태양광"
+    ]
+  },
+  {
+    "name": "POSCO홀딩스",
+    "ticker": "005490",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "RFHIC",
+    "ticker": "218410",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:SOFC·친환경"
+    ]
+  },
+  {
+    "name": "RF머트리얼즈",
+    "ticker": "327260",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:SOFC·친환경"
+    ]
+  },
+  {
+    "name": "SGA솔루션즈",
+    "ticker": "184230",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:AI·소프트웨어",
+      "MASTER_POOL:양자컴퓨터·보안"
+    ]
+  },
+  {
+    "name": "SK오션플랜트",
+    "ticker": "100090",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:풍력"
+    ]
+  },
+  {
+    "name": "SK이터닉스",
+    "ticker": "475150",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:SOFC·친환경",
+      "MASTER_POOL:태양광",
+      "MASTER_POOL:풍력"
+    ]
+  },
+  {
+    "name": "SK텔레콤",
+    "ticker": "017670",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "SK하이닉스",
+    "ticker": "000660",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "가비아",
+    "ticker": "079940",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:양자컴퓨터·보안"
+    ]
+  },
+  {
+    "name": "가온전선",
+    "ticker": "000500",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "가온칩스",
+    "ticker": "399720",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "갤럭시아머니트리",
+    "ticker": "094480",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:스테이블코인"
+    ]
+  },
+  {
+    "name": "금양그린파워",
+    "ticker": "282720",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:태양광",
+      "MASTER_POOL:풍력"
+    ]
+  },
+  {
+    "name": "나이벡",
+    "ticker": "138610",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:mRNA"
+    ]
+  },
+  {
+    "name": "녹십자",
+    "ticker": "006280",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:mRNA"
+    ]
+  },
+  {
+    "name": "뉴프렉스",
+    "ticker": "085670",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "다날",
+    "ticker": "064260",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:스테이블코인"
+    ]
+  },
+  {
+    "name": "대명에너지",
+    "ticker": "389260",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:태양광",
+      "MASTER_POOL:풍력"
+    ]
+  },
+  {
+    "name": "대창솔루션",
+    "ticker": "096350",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:풍력"
+    ]
+  },
+  {
+    "name": "대한광통신",
+    "ticker": "010170",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "더즌",
+    "ticker": "462860",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:스테이블코인"
+    ]
+  },
+  {
+    "name": "동국S&C",
+    "ticker": "100130",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:풍력"
+    ]
+  },
+  {
+    "name": "동국산업",
+    "ticker": "005160",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:풍력"
+    ]
+  },
+  {
+    "name": "동진쎄미켐",
+    "ticker": "005290",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "두산에너빌리티",
+    "ticker": "034020",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:풍력"
+    ]
+  },
+  {
+    "name": "두산퓨얼셀",
+    "ticker": "336260",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:SOFC·친환경"
+    ]
+  },
+  {
+    "name": "드림시큐리티",
+    "ticker": "203650",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:양자컴퓨터·보안"
+    ]
+  },
+  {
+    "name": "디앤디파마텍",
+    "ticker": "347850",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "라온시큐어",
+    "ticker": "042510",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:양자컴퓨터·보안"
+    ]
+  },
+  {
+    "name": "롯데이노베이트",
+    "ticker": "286940",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:AI·소프트웨어"
+    ]
+  },
+  {
+    "name": "리노공업",
+    "ticker": "058470",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "마이언티바이오",
+    "ticker": null,
+    "ticker_resolution_status": "REQUIRED_BEFORE_IMPORT",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:SOFC·친환경"
+    ]
+  },
+  {
+    "name": "마이진",
+    "ticker": null,
+    "ticker_resolution_status": "REQUIRED_BEFORE_IMPORT",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:mRNA"
+    ]
+  },
+  {
+    "name": "마이크로디지탈",
+    "ticker": null,
+    "ticker_resolution_status": "REQUIRED_BEFORE_IMPORT",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:AI·소프트웨어"
+    ]
+  },
+  {
+    "name": "미투온",
+    "ticker": "201490",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:스테이블코인"
+    ]
+  },
+  {
+    "name": "뱅크웨어글로벌",
+    "ticker": "199480",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:스테이블코인"
+    ]
+  },
+  {
+    "name": "범한퓨얼셀",
+    "ticker": "382900",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:SOFC·친환경"
+    ]
+  },
+  {
+    "name": "비나텍",
+    "ticker": "126340",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:SOFC·친환경"
+    ]
+  },
+  {
+    "name": "비에이치아이",
+    "ticker": "083650",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "비트플래닛",
+    "ticker": "049470",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:AI·소프트웨어"
+    ]
+  },
+  {
+    "name": "삼성SDI",
+    "ticker": "006400",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "삼성SDS",
+    "ticker": "018260",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "삼성물산",
+    "ticker": "028260",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "삼성바이오로직스",
+    "ticker": "207940",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "삼성에스디에스",
+    "ticker": "018260",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:AI·소프트웨어"
+    ]
+  },
+  {
+    "name": "삼성전기",
+    "ticker": "009150",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "삼성전자",
+    "ticker": "005930",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "삼영엠텍",
+    "ticker": "054540",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:풍력"
+    ]
+  },
+  {
+    "name": "서린바이오",
+    "ticker": null,
+    "ticker_resolution_status": "REQUIRED_BEFORE_IMPORT",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:mRNA"
+    ]
+  },
+  {
+    "name": "서울옥션",
+    "ticker": "063170",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:스테이블코인"
+    ]
+  },
+  {
+    "name": "서진시스템",
+    "ticker": "178320",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "선익시스템",
+    "ticker": "171090",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:태양광"
+    ]
+  },
+  {
+    "name": "성호전자",
+    "ticker": "043260",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "세진중공업",
+    "ticker": "075580",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:풍력"
+    ]
+  },
+  {
+    "name": "신성이엔지",
+    "ticker": "011930",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:태양광"
+    ]
+  },
+  {
+    "name": "신세계I&C",
+    "ticker": null,
+    "ticker_resolution_status": "REQUIRED_BEFORE_IMPORT",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:AI·소프트웨어"
+    ]
+  },
+  {
+    "name": "심텍",
+    "ticker": "222800",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "쎄트렉아이",
+    "ticker": "099320",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "쏠리드",
+    "ticker": "050890",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:양자컴퓨터·보안"
+    ]
+  },
+  {
+    "name": "씨에스베어링",
+    "ticker": "297090",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:풍력"
+    ]
+  },
+  {
+    "name": "씨에스윈드",
+    "ticker": "112610",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:풍력"
+    ]
+  },
+  {
+    "name": "아모센스",
+    "ticker": "357580",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:SOFC·친환경"
+    ]
+  },
+  {
+    "name": "아이티센글로벌",
+    "ticker": "124500",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:AI·소프트웨어",
+      "MASTER_POOL:스테이블코인"
+    ]
+  },
+  {
+    "name": "아이티센피엔",
+    "ticker": null,
+    "ticker_resolution_status": "REQUIRED_BEFORE_IMPORT",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:스테이블코인"
+    ]
+  },
+  {
+    "name": "아톤",
+    "ticker": "158430",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:스테이블코인",
+      "MASTER_POOL:양자컴퓨터·보안"
+    ]
+  },
+  {
+    "name": "에스에너지",
+    "ticker": "095910",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:태양광"
+    ]
+  },
+  {
+    "name": "에스티팜",
+    "ticker": "237690",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:mRNA"
+    ]
+  },
+  {
+    "name": "에이비엘바이오",
+    "ticker": "298380",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "에이직랜드",
+    "ticker": "445090",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "에이프로",
+    "ticker": "262260",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:SOFC·친환경"
+    ]
+  },
+  {
+    "name": "에코프로비엠",
+    "ticker": "247540",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "엑셈",
+    "ticker": "205100",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:AI·소프트웨어"
+    ]
+  },
+  {
+    "name": "엑스게이트",
+    "ticker": "356680",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:양자컴퓨터·보안"
+    ]
+  },
+  {
+    "name": "엘앤에프",
+    "ticker": "066970",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "엘케이켐",
+    "ticker": "489500",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:태양광"
+    ]
+  },
+  {
+    "name": "오이솔루션",
+    "ticker": "138080",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "올릭스",
+    "ticker": "226950",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:mRNA"
+    ]
+  },
+  {
+    "name": "우리기술투자",
+    "ticker": "041190",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "우리로",
+    "ticker": "046970",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:양자컴퓨터·보안"
+    ]
+  },
+  {
+    "name": "원익IPS",
+    "ticker": "240810",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "웨이비스",
+    "ticker": "289930",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:SOFC·친환경"
+    ]
+  },
+  {
+    "name": "유니슨",
+    "ticker": "018000",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:풍력"
+    ]
+  },
+  {
+    "name": "유니테스트",
+    "ticker": "086390",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:태양광"
+    ]
+  },
+  {
+    "name": "유한양행",
+    "ticker": "000100",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "이마트",
+    "ticker": "139480",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "이수페타시스",
+    "ticker": "007660",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "이연제약",
+    "ticker": null,
+    "ticker_resolution_status": "REQUIRED_BEFORE_IMPORT",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:mRNA"
+    ]
+  },
+  {
+    "name": "인텔리안테크",
+    "ticker": "189300",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "제노코",
+    "ticker": "361390",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "제주은행",
+    "ticker": "006220",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:스테이블코인"
+    ]
+  },
+  {
+    "name": "주성엔지니어링",
+    "ticker": "036930",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:태양광"
+    ]
+  },
+  {
+    "name": "진원생명과학",
+    "ticker": "011000",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:mRNA"
+    ]
+  },
+  {
+    "name": "카카오",
+    "ticker": "035720",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:스테이블코인"
+    ]
+  },
+  {
+    "name": "카카오페이",
+    "ticker": "377300",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:스테이블코인"
+    ]
+  },
+  {
+    "name": "케이사인",
+    "ticker": "192250",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:양자컴퓨터·보안"
+    ]
+  },
+  {
+    "name": "코나아이",
+    "ticker": "052400",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:스테이블코인"
+    ]
+  },
+  {
+    "name": "코세스",
+    "ticker": "089890",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:SOFC·친환경"
+    ]
+  },
+  {
+    "name": "코스텍시스",
+    "ticker": "355150",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:SOFC·친환경"
+    ]
+  },
+  {
+    "name": "쿠콘",
+    "ticker": "294570",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:스테이블코인"
+    ]
+  },
+  {
+    "name": "큐라티스",
+    "ticker": "348080",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:mRNA"
+    ]
+  },
+  {
+    "name": "클로봇",
+    "ticker": "466100",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:AI·소프트웨어"
+    ]
+  },
+  {
+    "name": "태웅",
+    "ticker": "044490",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:풍력"
+    ]
+  },
+  {
+    "name": "텔레칩스",
+    "ticker": "054450",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "티사이언티픽",
+    "ticker": "057680",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "파루",
+    "ticker": "043200",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:태양광"
+    ]
+  },
+  {
+    "name": "파미셀",
+    "ticker": "005690",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:mRNA"
+    ]
+  },
+  {
+    "name": "파인테크닉스",
+    "ticker": null,
+    "ticker_resolution_status": "REQUIRED_BEFORE_IMPORT",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:태양광"
+    ]
+  },
+  {
+    "name": "펩트론",
+    "ticker": "087010",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "포스코DX",
+    "ticker": "022100",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:AI·소프트웨어"
+    ]
+  },
+  {
+    "name": "포스코퓨처엠",
+    "ticker": "003670",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "핑거",
+    "ticker": "163730",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MASTER_POOL:스테이블코인"
+    ]
+  },
+  {
+    "name": "한국전력",
+    "ticker": "015760",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "한국항공우주",
+    "ticker": "047810",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "한글과컴퓨터",
+    "ticker": "030520",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "한미반도체",
+    "ticker": "042700",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "한미약품",
+    "ticker": "128940",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:mRNA"
+    ]
+  },
+  {
+    "name": "한전KPS",
+    "ticker": "051600",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "한전기술",
+    "ticker": "052690",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "한화솔루션",
+    "ticker": "009830",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:태양광"
+    ]
+  },
+  {
+    "name": "한화시스템",
+    "ticker": "272210",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "한화에어로스페이스",
+    "ticker": "012450",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "한화투자증권",
+    "ticker": "003530",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "헥토파이낸셜",
+    "ticker": "234340",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:스테이블코인"
+    ]
+  },
+  {
+    "name": "현대모비스",
+    "ticker": "012330",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  },
+  {
+    "name": "현대오토에버",
+    "ticker": "307950",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET",
+      "MASTER_POOL:AI·소프트웨어"
+    ]
+  },
+  {
+    "name": "효성중공업",
+    "ticker": "298040",
+    "ticker_resolution_status": "RESOLVED",
+    "market": "KOSPI/KOSDAQ (미확인, PHASE1 미조회)",
+    "is_listed": true,
+    "is_active": true,
+    "roles": [
+      "MAPPING_TARGET"
+    ]
+  }
+]
