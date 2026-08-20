@@ -27,6 +27,7 @@ from adapters.us_adapter import fetch_us_market_snapshot
 from score_engine.us_sector_score import compute_us_sector_scores, strength_label
 from score_engine.sox_confirmation import compute_sox_confirmation
 from prediction_run_store import save_prediction_run, load_prediction_run
+from adapters.snapshot_store import save_snapshot
 
 
 def fetch_sox_index_return():
@@ -47,6 +48,8 @@ def run(trade_date=None, force=False):
     all_us_tickers = sorted({t for s in master_data.US_MASTER_SECTORS for t in s["us_stocks"]})
     print(f"[1/4] US {len(all_us_tickers)}개 종목 스냅샷 수집 중...")
     us_rows = fetch_us_market_snapshot(all_us_tickers)
+    snap_path = save_snapshot(us_rows, [], label="0700")
+    print(f"    종목별 스냅샷 저장: {snap_path}")
 
     print("[2/4] ^SOX 지수 조회 중...")
     sox_return = fetch_sox_index_return()
