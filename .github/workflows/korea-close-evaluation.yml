@@ -1,0 +1,49 @@
+name: Korea Close Impact Evaluation
+
+on:
+  schedule:
+    # 16:10 KST = 07:10 UTC, Monday-Friday
+    - cron: "10 7 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: korea-close-evaluation
+  cancel-in-progress: false
+
+jobs:
+  evaluate-korea-close:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout master data and latest US prediction
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install close collector dependency
+        run: python -m pip install requests
+
+      - name: Collect Korea close and evaluate US to Korea impact
+        env:
+          PYTHONIOENCODING: utf-8
+        run: python run_1600_korea_close.py
+
+      - name: Preserve the date-specific evaluation
+        run: |
+          git config user.name "yeonchimo-market-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/actual_evaluations/
+          if git diff --cached --quiet; then
+            echo "No new Korea trading-day evaluation to publish."
+          else
+            git commit -m "Add Korea close impact evaluation"
+            git push
+          fi

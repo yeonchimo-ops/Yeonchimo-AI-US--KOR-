@@ -3,6 +3,7 @@
 # trade_date 하루에 한 번만 저장되는 불변 PREDICTION_RUN으로 남긴다.
 # 실제 07:00 KST 자동 실행(스케줄러 등록)은 이 스크립트 실행과는 별개의 결정이라 여기 포함하지 않았다.
 
+import json
 import os
 import sys
 import warnings
@@ -28,6 +29,7 @@ from score_engine.us_sector_score import compute_us_sector_scores, strength_labe
 from score_engine.sox_confirmation import compute_sox_confirmation
 from prediction_run_store import save_prediction_run, load_prediction_run
 from adapters.snapshot_store import save_snapshot
+from score_engine.korea_expected import compute_korea_expected
 
 
 def fetch_sox_index_return():
@@ -60,8 +62,24 @@ def run(trade_date=None, force=False):
     by_ticker = {r["instrument_id"]: r for r in us_rows}
     sox_conf = compute_sox_confirmation(sox_return, by_ticker.get("SOXL"), by_ticker.get("SOXS"))
 
-    print(f"[4/4] trade_date={trade_date} 불변 스냅샷 저장 중 (force={force})...")
-    path, run_id = save_prediction_run(trade_date, scores, sox_conf, input_cutoff, force=force)
+    print("[4/5] 고정 Master Mapping으로 Korea Expected 계산 중...")
+    with open(Path(__file__).parent / "data" / "generated" / "us_korea_stock_mapping.json", encoding="utf-8") as f:
+        mappings = json.load(f)
+    sector_names = {sector["id"]: sector["name"] for sector in master_data.US_MASTER_SECTORS}
+    korea_expected, expected_edges = compute_korea_expected(
+        mappings, scores, us_rows, sector_names=sector_names, sox_confirmation=sox_conf
+    )
+
+    print(f"[5/5] trade_date={trade_date} 불변 스냅샷 저장 중 (force={force})...")
+    path, run_id = save_prediction_run(
+        trade_date,
+        scores,
+        sox_conf,
+        input_cutoff,
+        force=force,
+        korea_expected_records=korea_expected,
+        korea_expected_edges=expected_edges,
+    )
 
     print(f"\n저장 완료: {path}")
     print(f"run_id: {run_id}")
@@ -78,6 +96,11 @@ def run(trade_date=None, force=False):
     print("=" * 78)
     for k, v in sox_conf.items():
         print(f"  {k}: {v}")
+
+    print("\nKorea Expected TOP 10")
+    for row in korea_expected[:10]:
+        print(f"  {row['rank']:>2}. {row['korea_name']}({row['korea_ticker']}) "
+              f"{row['expected_score']:.2f} {row['expected_direction']}")
 
     return path, run_id
 

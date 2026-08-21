@@ -10,14 +10,22 @@ from datetime import datetime, timezone
 RUN_DIR = Path(__file__).parent / "data" / "prediction_runs"
 
 SPEC_VERSION = "1.0.0"
-MODEL_VERSION = "phase3-us-sector-score-v1"
+MODEL_VERSION = "phase4-korea-expected-v1"
 
 
 def _run_path(trade_date):
     return RUN_DIR / f"prediction_run_{trade_date}.json"
 
 
-def save_prediction_run(trade_date, us_sector_scores, sox_confirmation, input_cutoff, force=False):
+def save_prediction_run(
+    trade_date,
+    us_sector_scores,
+    sox_confirmation,
+    input_cutoff,
+    force=False,
+    korea_expected_records=None,
+    korea_expected_edges=None,
+):
     RUN_DIR.mkdir(parents=True, exist_ok=True)
     path = _run_path(trade_date)
 
@@ -66,6 +74,8 @@ def save_prediction_run(trade_date, us_sector_scores, sox_confirmation, input_cu
         },
         "us_sector_score_records": score_records,
         "sox_confirmation": sox_confirmation,
+        "korea_expected_records": korea_expected_records or [],
+        "korea_expected_edges": korea_expected_edges or [],
     }
 
     with open(path, "w", encoding="utf-8") as f:
