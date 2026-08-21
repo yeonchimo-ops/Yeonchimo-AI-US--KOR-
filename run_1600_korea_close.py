@@ -11,7 +11,7 @@ import json
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from actual_evaluation_store import save_actual_evaluation
+from actual_evaluation_store import evaluation_path, save_actual_evaluation
 from adapters.naver_korea_close_adapter import fetch_naver_korea_close_snapshot
 from score_engine.korea_actual import build_actual_evaluation, compute_korea_actual_scores
 from score_engine.korea_expected import compute_korea_expected
@@ -78,6 +78,10 @@ def run(us_trade_date=None, korea_trade_date=None, force=False):
                 f"네이버 최근 거래일={resolved_korea_date}; 휴장일로 보고 저장을 건너뜁니다."
             )
             return None
+    existing_path = evaluation_path(resolved_korea_date)
+    if existing_path.exists() and not force:
+        print(f"{resolved_korea_date} 장마감 평가가 이미 존재합니다. 불변 파일을 유지하고 종료합니다: {existing_path}")
+        return existing_path
     korea_rows = [row for row in korea_rows if row.get("trade_date") == resolved_korea_date or row.get("quality") == "MISSING"]
     ok_count = sum(not str(row.get("quality", "MISSING")).startswith("MISSING") for row in korea_rows)
     print(f"[2/4] {resolved_korea_date} 유효 종목 {ok_count}/{len(korea_rows)} — Korea Actual 계산...")
