@@ -25,6 +25,7 @@ def save_prediction_run(
     force=False,
     korea_expected_records=None,
     korea_expected_edges=None,
+    us_stock_snapshots=None,
 ):
     RUN_DIR.mkdir(parents=True, exist_ok=True)
     path = _run_path(trade_date)
@@ -74,6 +75,7 @@ def save_prediction_run(
         },
         "us_sector_score_records": score_records,
         "sox_confirmation": sox_confirmation,
+        "us_stock_snapshots": us_stock_snapshots or [],
         "korea_expected_records": korea_expected_records or [],
         "korea_expected_edges": korea_expected_edges or [],
     }

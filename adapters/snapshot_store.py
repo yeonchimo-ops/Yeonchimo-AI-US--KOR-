@@ -9,11 +9,11 @@ from datetime import datetime, timezone
 SNAPSHOT_DIR = Path(__file__).parent.parent / "data" / "snapshots"
 
 
-def save_snapshot(us_rows, kr_rows, label=None):
+def save_snapshot(us_rows, kr_rows, label=None, trade_date=None):
     SNAPSHOT_DIR.mkdir(parents=True, exist_ok=True)
-    today = datetime.now(timezone.utc).strftime("%Y%m%d")
+    snapshot_date = trade_date or datetime.now(timezone.utc).strftime("%Y%m%d")
     label = label or "manual"
-    path = SNAPSHOT_DIR / f"snapshot_{today}_{label}.json"
+    path = SNAPSHOT_DIR / f"snapshot_{snapshot_date}_{label}.json"
 
     payload = {
         "saved_at_utc": datetime.now(timezone.utc).isoformat(),

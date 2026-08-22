@@ -1,5 +1,6 @@
 # PHASE 3 단위 테스트 — 네트워크 호출 없이 순수 로직만 검증한다 (합성 데이터 사용).
 
+import json
 import sys
 from pathlib import Path
 
@@ -115,3 +116,26 @@ def test_prediction_run_immutable(tmp_path, monkeypatch):
     superseded = list(tmp_path.glob("*.superseded.*.json"))
     assert len(superseded) == 1
     assert run_id1 != run_id2
+
+
+def test_prediction_run_embeds_us_stock_snapshots(tmp_path, monkeypatch):
+    import prediction_run_store as store
+    monkeypatch.setattr(store, "RUN_DIR", tmp_path)
+    scores = {"S1": {"score": 50.0, "components_normalized": {}, "components_raw": {}, "data_quality": "PARTIAL"}}
+    snapshots = [{"instrument_id": "NVDA", "return_pct": 1.25}]
+
+    path, _ = store.save_prediction_run(
+        "20260102", scores, {"status": "MISSING"}, "2026-01-02T00:00:00Z",
+        us_stock_snapshots=snapshots,
+    )
+
+    assert json.loads(path.read_text(encoding="utf-8"))["us_stock_snapshots"] == snapshots
+
+
+def test_snapshot_filename_uses_explicit_trade_date(tmp_path, monkeypatch):
+    import adapters.snapshot_store as store
+    monkeypatch.setattr(store, "SNAPSHOT_DIR", tmp_path)
+
+    path = store.save_snapshot([], [], label="0700", trade_date="20260103")
+
+    assert path.name == "snapshot_20260103_0700.json"

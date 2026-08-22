@@ -50,7 +50,7 @@ def run(trade_date=None, force=False):
     all_us_tickers = sorted({t for s in master_data.US_MASTER_SECTORS for t in s["us_stocks"]})
     print(f"[1/4] US {len(all_us_tickers)}개 종목 스냅샷 수집 중...")
     us_rows = fetch_us_market_snapshot(all_us_tickers)
-    snap_path = save_snapshot(us_rows, [], label="0700")
+    snap_path = save_snapshot(us_rows, [], label="0700", trade_date=trade_date)
     print(f"    종목별 스냅샷 저장: {snap_path}")
 
     print("[2/4] ^SOX 지수 조회 중...")
@@ -79,6 +79,7 @@ def run(trade_date=None, force=False):
         force=force,
         korea_expected_records=korea_expected,
         korea_expected_edges=expected_edges,
+        us_stock_snapshots=us_rows,
     )
 
     print(f"\n저장 완료: {path}")
