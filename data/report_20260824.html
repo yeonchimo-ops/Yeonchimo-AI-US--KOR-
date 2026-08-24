@@ -1,0 +1,477 @@
+<title>Yeonchimo AI Market · US Sector Score — 20260824</title>
+<style>
+:root {
+  --bg:#F6F5F0; --surface:#FFFFFF; --ink:#1B1C22; --ink-soft:#5C5F6B; --line:#E1DED3; --accent:#A8752E;
+  --up:#D6483F; --up-soft:#FBE7E4; --down:#2D62D8; --down-soft:#E6ECFC;
+  --hero-bg:#191B21; --hero-surface:#22252D; --hero-ink:#F3F1E9; --hero-accent:#E0AC55;
+  --flat:#8B8E99; --ink-faint:#8B8E99; --surface-2:#EFEDE5;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg:#121317; --surface:#1A1C22; --ink:#ECEBE6; --ink-soft:#A5A8B3; --line:#2C2F38; --accent:#E0AC55;
+    --up:#FF7A70; --up-soft:#3A2020; --down:#6E9BFF; --down-soft:#1E2740;
+    --hero-bg:#0C0D10; --hero-surface:#17181D; --hero-ink:#F3F1E9; --hero-accent:#E9BB6C;
+    --flat:#7C7F8B; --ink-faint:#6E7180; --surface-2:#22252C;
+  }
+}
+:root[data-theme="dark"] {
+  --bg:#121317; --surface:#1A1C22; --ink:#ECEBE6; --ink-soft:#A5A8B3; --line:#2C2F38; --accent:#E0AC55;
+  --up:#FF7A70; --up-soft:#3A2020; --down:#6E9BFF; --down-soft:#1E2740;
+  --hero-bg:#0C0D10; --hero-surface:#17181D; --hero-ink:#F3F1E9; --hero-accent:#E9BB6C;
+  --flat:#7C7F8B; --ink-faint:#6E7180; --surface-2:#22252C;
+}
+:root[data-theme="light"] {
+  --bg:#F6F5F0; --surface:#FFFFFF; --ink:#1B1C22; --ink-soft:#5C5F6B; --line:#E1DED3; --accent:#A8752E;
+  --up:#D6483F; --up-soft:#FBE7E4; --down:#2D62D8; --down-soft:#E6ECFC;
+  --hero-bg:#191B21; --hero-surface:#22252D; --hero-ink:#F3F1E9; --hero-accent:#E0AC55;
+  --flat:#8B8E99; --ink-faint:#8B8E99; --surface-2:#EFEDE5;
+}
+* { box-sizing: border-box; }
+html { background: var(--bg); }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Malgun Gothic', 'Apple SD Gothic Neo', system-ui, sans-serif;
+  max-width: 760px; margin: 0 auto; padding: 0 18px 70px;
+  line-height: 1.55; font-size: 15px;
+}
+.mono { font-family: 'SF Mono', 'Roboto Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums; font-feature-settings: "tnum" 1; }
+.up { color: var(--up); }
+.down { color: var(--down); }
+.flat { color: var(--flat); }
+.muted { color: var(--ink-faint); font-size: 13px; }
+
+.masthead { padding: 32px 0 20px; border-bottom: 1px solid var(--line); }
+.wordmark { font-size: 13px; letter-spacing: 0.1em; color: var(--accent); text-transform: uppercase; font-weight: 700; }
+.masthead h1 { font-size: 24px; margin: 6px 0 10px; font-weight: 700; text-wrap: balance; }
+.masthead .date { font-family: 'SF Mono', ui-monospace, monospace; color: var(--ink-soft); font-size: 12.5px; }
+.caveat { background: var(--surface-2); border-radius: 10px; padding: 10px 14px; font-size: 12.5px; color: var(--ink-soft); margin-top: 14px; }
+.disclaimer { font-size: 12px; color: var(--ink-faint); margin-top: 8px; }
+
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 22px; margin: 18px 0; }
+.card h2 { font-size: 17px; margin: 0 0 14px; display:flex; align-items:center; gap:8px; }
+.card h2 .idx { color: var(--ink-faint); font-weight: 500; font-size: 13px; }
+
+.hero { background: var(--hero-bg); color: var(--hero-ink); border-radius: 16px; padding: 24px 22px; margin: 20px 0; }
+.hero-kospi { display:flex; align-items:baseline; justify-content: space-between; margin-bottom: 18px; }
+.hero-kospi .lbl { font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: #9DA0AC; }
+.hero-kospi .val { font-family: 'SF Mono', ui-monospace, monospace; font-size: 30px; font-weight: 700; color: var(--hero-accent); }
+.hero-section-lbl { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #9DA0AC; margin: 16px 0 8px; }
+.hero-top-item { display:flex; align-items:center; gap: 10px; padding: 7px 0; border-bottom: 1px solid #2A2D36; font-size: 13.5px; }
+.hero-top-item:last-child { border-bottom: none; }
+.hero-top-rank { font-family: 'SF Mono', monospace; color: var(--hero-accent); font-weight:700; width: 16px; }
+.hero-top-name { flex: 1; }
+.hero-top-val { font-family: 'SF Mono', monospace; font-weight: 700; }
+.hero-divergence { margin-top: 14px; background: rgba(255,255,255,0.05); border-radius: 10px; padding: 10px 14px; }
+.hero-div-label { font-size: 12.5px; font-weight: 700; color: var(--hero-accent); margin-bottom: 4px; }
+.hero-divergence ul { margin: 0; padding-left: 18px; font-size: 12.5px; color: #C9CBD3; display:flex; flex-direction:column; gap: 3px; }
+.hero-daycount { margin-top: 14px; font-size: 12px; color: #9DA0AC; }
+
+.group-list { display:flex; flex-direction:column; gap: 2px; }
+.group-item { border-bottom: 1px solid var(--line); }
+.group-item:last-child { border-bottom: none; }
+.group-item summary {
+  display:flex; align-items:center; gap: 10px; padding: 11px 4px; cursor: pointer; list-style: none;
+  font-size: 13.5px;
+}
+.group-item summary::-webkit-details-marker { display:none; }
+.group-item summary::before { content: "▸"; color: var(--ink-faint); font-size: 11px; transition: transform 0.15s; flex-shrink:0; }
+.group-item[open] summary::before { transform: rotate(90deg); }
+.g-name { flex: 1.6; font-weight: 600; min-width: 0; }
+.draft-tag { font-size: 9.5px; background: var(--surface-2); color: var(--ink-faint); border-radius: 4px; padding: 1px 5px; font-weight: 700; letter-spacing: 0.03em; margin-left: 4px; }
+.g-score { flex: 0.7; text-align:right; font-family: 'SF Mono', monospace; font-weight: 700; }
+.g-label { flex: 1.1; text-align:right; font-size: 11px; font-weight: 700; letter-spacing: 0.02em; }
+.g-quality { flex: 0.9; text-align:right; color: var(--ink-faint); font-size: 11px; }
+
+.stock-table-wrap { overflow-x: auto; margin: 4px 0 14px 18px; }
+.stock-table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+.stock-table th { text-align:left; color: var(--ink-faint); font-weight:600; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.03em; padding: 6px 8px; border-bottom: 1px solid var(--line); white-space:nowrap; }
+.stock-table td { padding: 6px 8px; border-bottom: 1px solid var(--line); white-space:nowrap; }
+.stock-table tr:last-child td { border-bottom: none; }
+.stock-table .num { text-align:right; }
+.muted-cell { color: var(--ink-faint); font-size: 11.5px; }
+.component-line { font-size: 11.5px; color: var(--ink-soft); margin: 6px 0 12px 18px; }
+
+.index-row { display:flex; gap: 10px; margin: 18px 0; }
+.index-card { flex:1; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 14px 10px; min-width:0; }
+.index-name { font-size: 12px; color: var(--ink-soft); font-weight: 600; margin-bottom: 4px; }
+.index-price { font-family: 'SF Mono', ui-monospace, monospace; font-size: 17px; font-weight: 700; }
+.index-change { font-family: 'SF Mono', ui-monospace, monospace; font-size: 11.5px; margin-top: 2px; }
+.index-spark { width: 100%; height: 34px; margin-top: 8px; display:block; }
+.index-asof { font-size: 9.5px; color: var(--ink-faint); margin-top: 4px; }
+
+.mkt-wrap { display:flex; gap: 10px; margin: 10px 0 18px; flex-wrap: wrap; }
+.mkt-section { flex: 1; min-width: 220px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px; }
+.mkt-title { font-size: 11.5px; font-weight: 700; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 10px; }
+.mkt-item { display:flex; align-items:baseline; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid var(--line); gap: 8px; }
+.mkt-item:last-child { border-bottom: none; }
+.mkt-name { font-size: 12px; color: var(--ink-soft); flex-shrink: 0; }
+.mkt-vals { text-align: right; }
+.mkt-value { font-family: 'SF Mono', ui-monospace, monospace; font-size: 13px; font-weight: 700; }
+.mkt-change { font-family: 'SF Mono', ui-monospace, monospace; font-size: 10.5px; margin-left: 6px; }
+
+footer { margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 11.5px; color: var(--ink-faint); display:flex; flex-direction:column; gap:5px; }
+</style>
+
+<div class="masthead">
+  <div class="wordmark">Yeonchimo AI Market · PHASE 3</div>
+  <h1>US Close Wrap — 2026.08.24</h1>
+  <div class="date">2026년 08월 25일 07:39 KST 발행 · run_id RUN_20260824_223917781183Z</div>
+  <div class="caveat">📌 이 스코어는 명세 7.1의 4개 구성요소(등락강도/거래금액강도/Breadth/핵심리더십)만 반영합니다. Catalyst(뉴스·실적)는 PHASE 5 대상이라 항상 제외되어 있어 모든 섹터가 PARTIAL 품질입니다.</div>
+  <div class="disclaimer">본 리포트는 투자 조언이 아니며, 매수/매도 신호가 아닙니다. 데이터 출처: yfinance.</div>
+</div>
+
+<div class="index-row"><div class="index-card"><div class="index-name">다우산업</div><div class="index-price mono">53,417.16</div><div class="index-change mono up">▲ +140.15 (+0.26%)</div><svg class="index-spark" viewBox="0 0 200 34" preserveAspectRatio="none"><polygon points="3,31 3.0,4.2 24.6,4.8 46.1,3.0 67.7,5.8 89.2,12.9 110.8,15.9 132.3,12.8 153.9,31.0 175.4,17.6 197.0,14.0 197,31" fill="var(--up)" opacity="0.12"></polygon><polyline points="3.0,4.2 24.6,4.8 46.1,3.0 67.7,5.8 89.2,12.9 110.8,15.9 132.3,12.8 153.9,31.0 175.4,17.6 197.0,14.0" fill="none" stroke="var(--up)" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"></polyline></svg><div class="index-asof">2026-08-25 06:45 기준 · finance.naver.com/world</div></div><div class="index-card"><div class="index-name">나스닥종합</div><div class="index-price mono">25,980.19</div><div class="index-change mono down">▼ -200.27 (-0.76%)</div><svg class="index-spark" viewBox="0 0 200 34" preserveAspectRatio="none"><polygon points="3,31 3.0,15.2 24.6,10.3 46.1,3.0 67.7,5.5 89.2,8.4 110.8,20.5 132.3,19.1 153.9,28.0 175.4,24.2 197.0,31.0 197,31" fill="var(--down)" opacity="0.12"></polygon><polyline points="3.0,15.2 24.6,10.3 46.1,3.0 67.7,5.5 89.2,8.4 110.8,20.5 132.3,19.1 153.9,28.0 175.4,24.2 197.0,31.0" fill="none" stroke="var(--down)" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"></polyline></svg><div class="index-asof">2026-08-25 06:11 기준 · finance.naver.com/world</div></div><div class="index-card"><div class="index-name">S&P 500</div><div class="index-price mono">7,652.86</div><div class="index-change mono down">▼ -21.51 (-0.28%)</div><svg class="index-spark" viewBox="0 0 200 34" preserveAspectRatio="none"><polygon points="3,31 3.0,15.6 24.6,12.0 46.1,3.0 67.7,5.3 89.2,12.6 110.8,22.0 132.3,19.1 153.9,31.0 175.4,25.1 197.0,28.9 197,31" fill="var(--down)" opacity="0.12"></polygon><polyline points="3.0,15.6 24.6,12.0 46.1,3.0 67.7,5.3 89.2,12.6 110.8,22.0 132.3,19.1 153.9,31.0 175.4,25.1 197.0,28.9" fill="none" stroke="var(--down)" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"></polyline></svg><div class="index-asof">2026-08-25 06:45 기준 · finance.naver.com/world</div></div></div>
+
+<div class="mkt-wrap"><div class="mkt-section"><div class="mkt-title">환전 고시 환율</div><div class="mkt-item"><span class="mkt-name">미국 USD</span><span class="mkt-vals"><span class="mkt-value mono">1,384.00</span><span class="mkt-change mono down">▼3.00</span></span></div><div class="mkt-item"><span class="mkt-name">일본 JPY(100엔)</span><span class="mkt-vals"><span class="mkt-value mono">869.73</span><span class="mkt-change mono down">▼2.84</span></span></div><div class="mkt-item"><span class="mkt-name">유럽연합 EUR</span><span class="mkt-vals"><span class="mkt-value mono">1,614.16</span><span class="mkt-change mono down">▼5.30</span></span></div><div class="mkt-item"><span class="mkt-name">중국 CNY</span><span class="mkt-vals"><span class="mkt-value mono">205.89</span><span class="mkt-change mono down">▼0.48</span></span></div></div><div class="mkt-section"><div class="mkt-title">국제 시장 환율</div><div class="mkt-item"><span class="mkt-name">달러/일본 엔</span><span class="mkt-vals"><span class="mkt-value mono">159.1800</span><span class="mkt-change mono up">▲0.2100</span></span></div><div class="mkt-item"><span class="mkt-name">유로/달러</span><span class="mkt-vals"><span class="mkt-value mono">1.1665</span><span class="mkt-change mono down">▼0.0022</span></span></div><div class="mkt-item"><span class="mkt-name">영국 파운드/달러</span><span class="mkt-vals"><span class="mkt-value mono">1.3634</span><span class="mkt-change mono down">▼0.0007</span></span></div><div class="mkt-item"><span class="mkt-name">달러인덱스</span><span class="mkt-vals"><span class="mkt-value mono">98.7200</span><span class="mkt-change mono down">▼0.0900</span></span></div></div><div class="mkt-section"><div class="mkt-title">유가·금시세</div><div class="mkt-item"><span class="mkt-name">WTI</span><span class="mkt-vals"><span class="mkt-value mono">85.01</span><span class="mkt-change mono down">▼2.05</span></span></div><div class="mkt-item"><span class="mkt-name">휘발유</span><span class="mkt-vals"><span class="mkt-value mono">1861.48</span><span class="mkt-change mono down">▼0.16</span></span></div><div class="mkt-item"><span class="mkt-name">국제 금</span><span class="mkt-vals"><span class="mkt-value mono">4697.8</span><span class="mkt-change mono up">▲17.20</span></span></div><div class="mkt-item"><span class="mkt-name">국내 금</span><span class="mkt-vals"><span class="mkt-value mono">206679.39</span><span class="mkt-change mono down">▼20.20</span></span></div></div></div>
+
+<div class="mkt-title" style="margin:4px 0 8px;">미국국채 수익률</div><div class="index-row"><div class="index-card"><div class="index-name">미국채 2년</div><div class="muted-cell">MISSING</div></div><div class="index-card"><div class="index-name">미국채 10년</div><div class="muted-cell">MISSING</div></div><div class="index-card"><div class="index-name">미국채 30년</div><div class="muted-cell">MISSING</div></div></div>
+
+<div class="hero">
+  <div class="hero-kospi">
+    <div><div class="lbl">SOX 반도체지수</div></div>
+    <div class="val down">-2.70%</div>
+  </div>
+  <div class="hero-section-lbl">US Sector Score TOP 3</div>
+  <div class="hero-top-item"><span class="hero-top-rank">1</span><span class="hero-top-name">SOFC·친환경</span><span class="hero-top-val up mono">86.8</span></div>
+<div class="hero-top-item"><span class="hero-top-rank">2</span><span class="hero-top-name">방산</span><span class="hero-top-val up mono">84.2</span></div>
+<div class="hero-top-item"><span class="hero-top-rank">3</span><span class="hero-top-name">가상화폐</span><span class="hero-top-val up mono">70.0</span></div>
+  <div class="hero-divergence">
+    <div class="hero-div-label">SOX / SOXL / SOXS 확인 신호</div>
+    <ul><li>^SOX -2.70%  (SOX 방향과 SOXL/SOXS 일치, 보조조정 +3.0점)</li></ul>
+  </div>
+  <div class="hero-daycount">17개 섹터 전체 표시 · 고정 display_order 유지 (명세 6.5)</div>
+</div>
+
+<div class="card">
+  <h2><span class="idx">③</span>US SECTOR SCORE — 17개 섹터 (고정 순서)</h2>
+  <p class="muted" style="margin-bottom:14px;">섹터명 / 점수(0~100) / 강도등급 / 데이터품질 — 항목을 눌러 구성종목별 상세를 확인하세요.</p>
+  <div class="group-list">
+<details class="group-item">
+<summary>
+  <span class="g-name">M7</span>
+  <span class="g-score mono">57.1</span>
+  <span class="g-label up">🟢 POSITIVE</span>
+  <span class="g-quality">PARTIAL</span>
+</summary>
+<div class="component-line">구성요소(0~100) — return_strength: 75.0 · traded_value_strength: 43.8 · breadth: 71.4 · core_leadership: 13.3 · catalyst: -</div>
+<div class="stock-table-wrap">
+<table class="stock-table">
+<thead><tr><th>종목</th><th>상태</th><th class="num">등락률</th><th class="num">가격</th><th class="num">시가총액</th><th class="num">거래금액</th></tr></thead>
+<tbody>
+<tr><td><div>엔비디아</div><div class="mono muted-cell">NVDA</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-2.91%</span></td><td class="num mono">208.48</td><td class="num mono"><span class="num mono">$5,049.59B</span></td><td class="num mono"><span class="num mono">$28.02B</span></td></tr>
+<tr><td><div>애플</div><div class="mono muted-cell">AAPL</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono up">+0.32%</span></td><td class="num mono">310.34</td><td class="num mono"><span class="num mono">$4,529.16B</span></td><td class="num mono"><span class="num mono">$10.67B</span></td></tr>
+<tr><td><div>마이크로소프트</div><div class="mono muted-cell">MSFT</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono up">+0.84%</span></td><td class="num mono">487.31</td><td class="num mono"><span class="num mono">$3,618.54B</span></td><td class="num mono"><span class="num mono">$8.16B</span></td></tr>
+<tr><td><div>알파벳(구글)</div><div class="mono muted-cell">GOOGL</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono up">+0.94%</span></td><td class="num mono">348.06</td><td class="num mono"><span class="num mono">$4,256.75B</span></td><td class="num mono"><span class="num mono">$9.15B</span></td></tr>
+<tr><td><div>아마존</div><div class="mono muted-cell">AMZN</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono up">+1.33%</span></td><td class="num mono">262.07</td><td class="num mono"><span class="num mono">$2,826.77B</span></td><td class="num mono"><span class="num mono">$7.33B</span></td></tr>
+<tr><td><div>메타 플랫폼스</div><div class="mono muted-cell">META</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono up">+1.66%</span></td><td class="num mono">559.02</td><td class="num mono"><span class="num mono">$1,424.11B</span></td><td class="num mono"><span class="num mono">$7.19B</span></td></tr>
+<tr><td><div>테슬라</div><div class="mono muted-cell">TSLA</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-3.83%</span></td><td class="num mono">348.95</td><td class="num mono"><span class="num mono">$1,378.19B</span></td><td class="num mono"><span class="num mono">$13.62B</span></td></tr>
+</tbody>
+</table>
+</div>
+</details><details class="group-item">
+<summary>
+  <span class="g-name">반도체</span>
+  <span class="g-score mono">19.3</span>
+  <span class="g-label down">🔴 VERY_WEAK</span>
+  <span class="g-quality">PARTIAL</span>
+</summary>
+<div class="component-line">구성요소(0~100) — return_strength: 18.8 · traded_value_strength: 25.0 · breadth: 0.0 · core_leadership: 33.3 · catalyst: -</div>
+<div class="stock-table-wrap">
+<table class="stock-table">
+<thead><tr><th>종목</th><th>상태</th><th class="num">등락률</th><th class="num">가격</th><th class="num">시가총액</th><th class="num">거래금액</th></tr></thead>
+<tbody>
+<tr><td><div>SK하이닉스(ADR)</div><div class="mono muted-cell">SKHY</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-4.92%</span></td><td class="num mono">155.37</td><td class="num mono"><span class="num mono">$1,102.90B</span></td><td class="num mono"><span class="num mono">$2.57B</span></td></tr>
+<tr><td><div>마이크론 테크놀로지</div><div class="mono muted-cell">MU</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-5.83%</span></td><td class="num mono">910.43</td><td class="num mono"><span class="num mono">$1,028.23B</span></td><td class="num mono"><span class="num mono">$27.13B</span></td></tr>
+<tr><td><div>샌디스크</div><div class="mono muted-cell">SNDK</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-6.45%</span></td><td class="num mono">1,493.12</td><td class="num mono"><span class="num mono">$218.62B</span></td><td class="num mono"><span class="num mono">$20.80B</span></td></tr>
+<tr><td><div>마벨 테크놀로지</div><div class="mono muted-cell">MRVL</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-3.27%</span></td><td class="num mono">229.29</td><td class="num mono"><span class="num mono">$205.80B</span></td><td class="num mono"><span class="num mono">$4.29B</span></td></tr>
+<tr><td><div>시게이트 테크놀로지</div><div class="mono muted-cell">STX</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-6.51%</span></td><td class="num mono">794.65</td><td class="num mono"><span class="num mono">$180.10B</span></td><td class="num mono"><span class="num mono">$2.54B</span></td></tr>
+<tr><td><div>TSMC(ADR)</div><div class="mono muted-cell">TSM</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-2.11%</span></td><td class="num mono">410.12</td><td class="num mono"><span class="num mono">$2,127.08B</span></td><td class="num mono"><span class="num mono">$4.36B</span></td></tr>
+<tr><td><div>브로드컴</div><div class="mono muted-cell">AVGO</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-2.63%</span></td><td class="num mono">358.76</td><td class="num mono"><span class="num mono">$1,706.83B</span></td><td class="num mono"><span class="num mono">$6.69B</span></td></tr>
+<tr><td><div>AMD</div><div class="mono muted-cell">AMD</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-3.49%</span></td><td class="num mono">456.75</td><td class="num mono"><span class="num mono">$745.62B</span></td><td class="num mono"><span class="num mono">$7.55B</span></td></tr>
+<tr><td><div>인텔</div><div class="mono muted-cell">INTC</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-3.12%</span></td><td class="num mono">87.26</td><td class="num mono"><span class="num mono">$458.51B</span></td><td class="num mono"><span class="num mono">$8.41B</span></td></tr>
+<tr><td><div>텍사스 인스트루먼트</div><div class="mono muted-cell">TXN</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-2.05%</span></td><td class="num mono">258.94</td><td class="num mono"><span class="num mono">$236.48B</span></td><td class="num mono"><span class="num mono">$1.66B</span></td></tr>
+<tr><td><div>ASML 홀딩(ADR)</div><div class="mono muted-cell">ASML</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-1.34%</span></td><td class="num mono">1,740.13</td><td class="num mono"><span class="num mono">$668.38B</span></td><td class="num mono"><span class="num mono">$1.87B</span></td></tr>
+</tbody>
+</table>
+</div>
+</details><details class="group-item">
+<summary>
+  <span class="g-name">발전설비</span>
+  <span class="g-score mono">38.5</span>
+  <span class="g-label down">🔴 WEAK</span>
+  <span class="g-quality">PARTIAL</span>
+</summary>
+<div class="component-line">구성요소(0~100) — return_strength: 37.5 · traded_value_strength: 56.2 · breadth: 0.0 · core_leadership: 46.7 · catalyst: -</div>
+<div class="stock-table-wrap">
+<table class="stock-table">
+<thead><tr><th>종목</th><th>상태</th><th class="num">등락률</th><th class="num">가격</th><th class="num">시가총액</th><th class="num">거래금액</th></tr></thead>
+<tbody>
+<tr><td><div>GE 버노바</div><div class="mono muted-cell">GEV</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-1.54%</span></td><td class="num mono">942.10</td><td class="num mono"><span class="num mono">$250.91B</span></td><td class="num mono"><span class="num mono">$1.78B</span></td></tr>
+</tbody>
+</table>
+</div>
+</details><details class="group-item">
+<summary>
+  <span class="g-name">원전·SMR</span>
+  <span class="g-score mono">69.0</span>
+  <span class="g-label up">🟢 POSITIVE</span>
+  <span class="g-quality">PARTIAL</span>
+</summary>
+<div class="component-line">구성요소(0~100) — return_strength: 68.8 · traded_value_strength: 87.5 · breadth: 25.0 · core_leadership: 80.0 · catalyst: -</div>
+<div class="stock-table-wrap">
+<table class="stock-table">
+<thead><tr><th>종목</th><th>상태</th><th class="num">등락률</th><th class="num">가격</th><th class="num">시가총액</th><th class="num">거래금액</th></tr></thead>
+<tbody>
+<tr><td><div>뉴스케일 파워</div><div class="mono muted-cell">SMR</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-3.72%</span></td><td class="num mono">9.05</td><td class="num mono"><span class="num mono">$3.71B</span></td><td class="num mono"><span class="num mono">$417.2M</span></td></tr>
+<tr><td><div>오클로</div><div class="mono muted-cell">OKLO</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-5.70%</span></td><td class="num mono">39.69</td><td class="num mono"><span class="num mono">$7.38B</span></td><td class="num mono"><span class="num mono">$300.4M</span></td></tr>
+<tr><td><div>컨스텔레이션 에너지</div><div class="mono muted-cell">CEG</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono up">+0.20%</span></td><td class="num mono">273.43</td><td class="num mono"><span class="num mono">$96.88B</span></td><td class="num mono"><span class="num mono">$702.0M</span></td></tr>
+<tr><td><div>Global X 우라늄 ETF</div><div class="mono muted-cell">URA</div></td><td class="mono muted-cell">PARTIAL(시가총액 없음)</td><td><span class="num mono down">-0.82%</span></td><td class="num mono">45.69</td><td class="num mono"><span class="num mono muted-cell">-</span></td><td class="num mono"><span class="num mono">$121.2M</span></td></tr>
+</tbody>
+</table>
+</div>
+</details><details class="group-item">
+<summary>
+  <span class="g-name">태양광</span>
+  <span class="g-score mono">49.9</span>
+  <span class="g-label flat">⚪ NEUTRAL</span>
+  <span class="g-quality">PARTIAL</span>
+</summary>
+<div class="component-line">구성요소(0~100) — return_strength: 87.5 · traded_value_strength: 6.2 · breadth: 25.0 · core_leadership: 86.7 · catalyst: -</div>
+<div class="stock-table-wrap">
+<table class="stock-table">
+<thead><tr><th>종목</th><th>상태</th><th class="num">등락률</th><th class="num">가격</th><th class="num">시가총액</th><th class="num">거래금액</th></tr></thead>
+<tbody>
+<tr><td><div>인페이즈 에너지</div><div class="mono muted-cell">ENPH</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-3.70%</span></td><td class="num mono">37.18</td><td class="num mono"><span class="num mono">$4.91B</span></td><td class="num mono"><span class="num mono">$154.4M</span></td></tr>
+<tr><td><div>Invesco 솔라 ETF</div><div class="mono muted-cell">TAN</div></td><td class="mono muted-cell">PARTIAL(시가총액 없음)</td><td><span class="num mono down">-2.03%</span></td><td class="num mono">48.32</td><td class="num mono"><span class="num mono muted-cell">-</span></td><td class="num mono"><span class="num mono">$44.3M</span></td></tr>
+<tr><td><div>넥스트에라 에너지</div><div class="mono muted-cell">NEE</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono up">+0.54%</span></td><td class="num mono">84.10</td><td class="num mono"><span class="num mono">$175.43B</span></td><td class="num mono"><span class="num mono">$645.0M</span></td></tr>
+<tr><td><div>퍼스트 솔라</div><div class="mono muted-cell">FSLR</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-2.79%</span></td><td class="num mono">208.31</td><td class="num mono"><span class="num mono">$22.39B</span></td><td class="num mono"><span class="num mono">$312.1M</span></td></tr>
+</tbody>
+</table>
+</div>
+</details><details class="group-item">
+<summary>
+  <span class="g-name">풍력</span>
+  <span class="g-score mono">32.2</span>
+  <span class="g-label down">🔴 WEAK</span>
+  <span class="g-quality">PARTIAL</span>
+</summary>
+<div class="component-line">구성요소(0~100) — return_strength: 50.0 · traded_value_strength: 12.5 · breadth: 25.0 · core_leadership: 40.0 · catalyst: -</div>
+<div class="stock-table-wrap">
+<table class="stock-table">
+<thead><tr><th>종목</th><th>상태</th><th class="num">등락률</th><th class="num">가격</th><th class="num">시가총액</th><th class="num">거래금액</th></tr></thead>
+<tbody>
+<tr><td><div>넥스트에라 에너지</div><div class="mono muted-cell">NEE</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono up">+0.54%</span></td><td class="num mono">84.10</td><td class="num mono"><span class="num mono">$175.43B</span></td><td class="num mono"><span class="num mono">$645.0M</span></td></tr>
+<tr><td><div>제너럴 일렉트릭</div><div class="mono muted-cell">GE</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-1.87%</span></td><td class="num mono">341.84</td><td class="num mono"><span class="num mono">$354.68B</span></td><td class="num mono"><span class="num mono">$909.7M</span></td></tr>
+<tr><td><div>클리어웨이 에너지</div><div class="mono muted-cell">CWEN</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-0.86%</span></td><td class="num mono">32.28</td><td class="num mono"><span class="num mono">$6.63B</span></td><td class="num mono"><span class="num mono">$36.8M</span></td></tr>
+<tr><td><div>브룩필드 리뉴어블 파트너스</div><div class="mono muted-cell">BEP</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-1.28%</span></td><td class="num mono">32.35</td><td class="num mono"><span class="num mono">$9.71B</span></td><td class="num mono"><span class="num mono">$14.3M</span></td></tr>
+</tbody>
+</table>
+</div>
+</details><details class="group-item">
+<summary>
+  <span class="g-name">광통신</span>
+  <span class="g-score mono">17.1</span>
+  <span class="g-label down">🔴 VERY_WEAK</span>
+  <span class="g-quality">PARTIAL</span>
+</summary>
+<div class="component-line">구성요소(0~100) — return_strength: 6.2 · traded_value_strength: 37.5 · breadth: 0.0 · core_leadership: 20.0 · catalyst: -</div>
+<div class="stock-table-wrap">
+<table class="stock-table">
+<thead><tr><th>종목</th><th>상태</th><th class="num">등락률</th><th class="num">가격</th><th class="num">시가총액</th><th class="num">거래금액</th></tr></thead>
+<tbody>
+<tr><td><div>루멘텀 홀딩스</div><div class="mono muted-cell">LITE</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-4.22%</span></td><td class="num mono">830.17</td><td class="num mono"><span class="num mono">$74.47B</span></td><td class="num mono"><span class="num mono">$3.24B</span></td></tr>
+<tr><td><div>코히런트</div><div class="mono muted-cell">COHR</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-4.85%</span></td><td class="num mono">275.49</td><td class="num mono"><span class="num mono">$53.95B</span></td><td class="num mono"><span class="num mono">$1.90B</span></td></tr>
+<tr><td><div>코닝</div><div class="mono muted-cell">GLW</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-2.86%</span></td><td class="num mono">145.55</td><td class="num mono"><span class="num mono">$125.38B</span></td><td class="num mono"><span class="num mono">$1.49B</span></td></tr>
+<tr><td><div>시에나</div><div class="mono muted-cell">CIEN</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-6.02%</span></td><td class="num mono">371.95</td><td class="num mono"><span class="num mono">$52.65B</span></td><td class="num mono"><span class="num mono">$660.9M</span></td></tr>
+</tbody>
+</table>
+</div>
+</details><details class="group-item">
+<summary>
+  <span class="g-name">방산</span>
+  <span class="g-score mono">84.2</span>
+  <span class="g-label up">🟢 STRONG</span>
+  <span class="g-quality">PARTIAL</span>
+</summary>
+<div class="component-line">구성요소(0~100) — return_strength: 93.8 · traded_value_strength: 68.8 · breadth: 100.0 · core_leadership: 73.3 · catalyst: -</div>
+<div class="stock-table-wrap">
+<table class="stock-table">
+<thead><tr><th>종목</th><th>상태</th><th class="num">등락률</th><th class="num">가격</th><th class="num">시가총액</th><th class="num">거래금액</th></tr></thead>
+<tbody>
+<tr><td><div>록히드 마틴</div><div class="mono muted-cell">LMT</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono up">+0.10%</span></td><td class="num mono">564.14</td><td class="num mono"><span class="num mono">$130.20B</span></td><td class="num mono"><span class="num mono">$574.2M</span></td></tr>
+</tbody>
+</table>
+</div>
+</details><details class="group-item">
+<summary>
+  <span class="g-name">우주항공</span>
+  <span class="g-score mono">24.3</span>
+  <span class="g-label down">🔴 VERY_WEAK</span>
+  <span class="g-quality">PARTIAL</span>
+</summary>
+<div class="component-line">구성요소(0~100) — return_strength: 31.2 · traded_value_strength: 18.8 · breadth: 0.0 · core_leadership: 53.3 · catalyst: -</div>
+<div class="stock-table-wrap">
+<table class="stock-table">
+<thead><tr><th>종목</th><th>상태</th><th class="num">등락률</th><th class="num">가격</th><th class="num">시가총액</th><th class="num">거래금액</th></tr></thead>
+<tbody>
+<tr><td><div>스페이스X(표시값)</div><div class="mono muted-cell">SPCX</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-1.44%</span></td><td class="num mono">135.00</td><td class="num mono"><span class="num mono">$1,779.54B</span></td><td class="num mono"><span class="num mono">$8.09B</span></td></tr>
+<tr><td><div>로켓 랩</div><div class="mono muted-cell">RKLB</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-5.91%</span></td><td class="num mono">68.28</td><td class="num mono"><span class="num mono">$43.65B</span></td><td class="num mono"><span class="num mono">$975.2M</span></td></tr>
+<tr><td><div>AST 스페이스모바일</div><div class="mono muted-cell">ASTS</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-9.18%</span></td><td class="num mono">62.35</td><td class="num mono"><span class="num mono">$18.69B</span></td><td class="num mono"><span class="num mono">$750.0M</span></td></tr>
+<tr><td><div>표시값(재검증 필요)</div><div class="mono muted-cell">AIFF</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-3.70%</span></td><td class="num mono">1.04</td><td class="num mono"><span class="num mono">$16.3M</span></td><td class="num mono"><span class="num mono">$0.1M</span></td></tr>
+<tr><td><div>표시값(재검증 필요)</div><div class="mono muted-cell">FLY</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-5.52%</span></td><td class="num mono">23.10</td><td class="num mono"><span class="num mono">$3.87B</span></td><td class="num mono"><span class="num mono">$53.2M</span></td></tr>
+<tr><td><div>인튜이티브 머신스</div><div class="mono muted-cell">LUNR</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-9.06%</span></td><td class="num mono">16.66</td><td class="num mono"><span class="num mono">$2.67B</span></td><td class="num mono"><span class="num mono">$125.9M</span></td></tr>
+<tr><td><div>플래닛 랩스</div><div class="mono muted-cell">PL</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-3.23%</span></td><td class="num mono">21.57</td><td class="num mono"><span class="num mono">$7.69B</span></td><td class="num mono"><span class="num mono">$89.9M</span></td></tr>
+</tbody>
+</table>
+</div>
+</details><details class="group-item">
+<summary>
+  <span class="g-name">리튬</span>
+  <span class="g-score mono">62.6</span>
+  <span class="g-label up">🟢 POSITIVE</span>
+  <span class="g-quality">PARTIAL</span>
+</summary>
+<div class="component-line">구성요소(0~100) — return_strength: 43.8 · traded_value_strength: 100.0 · breadth: 33.3 · core_leadership: 60.0 · catalyst: -</div>
+<div class="stock-table-wrap">
+<table class="stock-table">
+<thead><tr><th>종목</th><th>상태</th><th class="num">등락률</th><th class="num">가격</th><th class="num">시가총액</th><th class="num">거래금액</th></tr></thead>
+<tbody>
+<tr><td><div>알버말</div><div class="mono muted-cell">ALB</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-1.21%</span></td><td class="num mono">141.51</td><td class="num mono"><span class="num mono">$16.70B</span></td><td class="num mono"><span class="num mono">$298.0M</span></td></tr>
+<tr><td><div>리튬 아메리카스</div><div class="mono muted-cell">LAC</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-0.96%</span></td><td class="num mono">3.11</td><td class="num mono"><span class="num mono">$1.13B</span></td><td class="num mono"><span class="num mono">$24.2M</span></td></tr>
+<tr><td><div>Global X 리튬 ETF</div><div class="mono muted-cell">LIT</div></td><td class="mono muted-cell">PARTIAL(시가총액 없음)</td><td><span class="num mono up">+0.55%</span></td><td class="num mono">77.03</td><td class="num mono"><span class="num mono muted-cell">-</span></td><td class="num mono"><span class="num mono">$93.4M</span></td></tr>
+</tbody>
+</table>
+</div>
+</details><details class="group-item">
+<summary>
+  <span class="g-name">SOFC·친환경</span>
+  <span class="g-score mono">86.8</span>
+  <span class="g-label up">🟢🟢 VERY_STRONG</span>
+  <span class="g-quality">PARTIAL</span>
+</summary>
+<div class="component-line">구성요소(0~100) — return_strength: 100.0 · traded_value_strength: 62.5 · breadth: 100.0 · core_leadership: 93.3 · catalyst: -</div>
+<div class="stock-table-wrap">
+<table class="stock-table">
+<thead><tr><th>종목</th><th>상태</th><th class="num">등락률</th><th class="num">가격</th><th class="num">시가총액</th><th class="num">거래금액</th></tr></thead>
+<tbody>
+<tr><td><div>블룸 에너지</div><div class="mono muted-cell">BE</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono up">+1.28%</span></td><td class="num mono">204.02</td><td class="num mono"><span class="num mono">$60.09B</span></td><td class="num mono"><span class="num mono">$3.08B</span></td></tr>
+</tbody>
+</table>
+</div>
+</details><details class="group-item">
+<summary>
+  <span class="g-name">제약·바이오</span>
+  <span class="g-score mono">43.9</span>
+  <span class="g-label down">🔴 WEAK</span>
+  <span class="g-quality">PARTIAL</span>
+</summary>
+<div class="component-line">구성요소(0~100) — return_strength: 56.2 · traded_value_strength: 31.2 · breadth: 25.0 · core_leadership: 66.7 · catalyst: -</div>
+<div class="stock-table-wrap">
+<table class="stock-table">
+<thead><tr><th>종목</th><th>상태</th><th class="num">등락률</th><th class="num">가격</th><th class="num">시가총액</th><th class="num">거래금액</th></tr></thead>
+<tbody>
+<tr><td><div>모더나</div><div class="mono muted-cell">MRNA</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-4.30%</span></td><td class="num mono">138.89</td><td class="num mono"><span class="num mono">$55.45B</span></td><td class="num mono"><span class="num mono">$4.37B</span></td></tr>
+<tr><td><div>일라이 릴리</div><div class="mono muted-cell">LLY</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-0.67%</span></td><td class="num mono">1,246.93</td><td class="num mono"><span class="num mono">$1,111.94B</span></td><td class="num mono"><span class="num mono">$2.07B</span></td></tr>
+<tr><td><div>노보 노디스크(ADR)</div><div class="mono muted-cell">NVO</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono up">+0.39%</span></td><td class="num mono">46.92</td><td class="num mono"><span class="num mono">$207.48B</span></td><td class="num mono"><span class="num mono">$452.8M</span></td></tr>
+<tr><td><div>화이자</div><div class="mono muted-cell">PFE</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-0.36%</span></td><td class="num mono">27.97</td><td class="num mono"><span class="num mono">$159.42B</span></td><td class="num mono"><span class="num mono">$665.9M</span></td></tr>
+</tbody>
+</table>
+</div>
+</details><details class="group-item">
+<summary>
+  <span class="g-name">반도체 ETF</span>
+  <span class="g-score mono">63.7</span>
+  <span class="g-label up">🟢 POSITIVE</span>
+  <span class="g-quality">PARTIAL</span>
+</summary>
+<div class="component-line">구성요소(0~100) — return_strength: 81.2 · traded_value_strength: 50.0 · breadth: 50.0 · core_leadership: - · catalyst: -</div>
+<div class="stock-table-wrap">
+<table class="stock-table">
+<thead><tr><th>종목</th><th>상태</th><th class="num">등락률</th><th class="num">가격</th><th class="num">시가총액</th><th class="num">거래금액</th></tr></thead>
+<tbody>
+<tr><td><div>Direxion 반도체 불 3X</div><div class="mono muted-cell">SOXL</div></td><td class="mono muted-cell">PARTIAL(시가총액 없음)</td><td><span class="num mono down">-7.83%</span></td><td class="num mono">111.16</td><td class="num mono"><span class="num mono muted-cell">-</span></td><td class="num mono"><span class="num mono">$7.39B</span></td></tr>
+<tr><td><div>Direxion 반도체 베어 3X</div><div class="mono muted-cell">SOXS</div></td><td class="mono muted-cell">PARTIAL(시가총액 없음)</td><td><span class="num mono up">+7.91%</span></td><td class="num mono">50.75</td><td class="num mono"><span class="num mono muted-cell">-</span></td><td class="num mono"><span class="num mono">$2.33B</span></td></tr>
+</tbody>
+</table>
+</div>
+</details><details class="group-item">
+<summary>
+  <span class="g-name">AI·소프트웨어</span>
+  <span class="g-score mono">12.7</span>
+  <span class="g-label down">🔴 VERY_WEAK</span>
+  <span class="g-quality">PARTIAL</span>
+</summary>
+<div class="component-line">구성요소(0~100) — return_strength: 25.0 · traded_value_strength: 0.0 · breadth: 0.0 · core_leadership: 26.7 · catalyst: -</div>
+<div class="stock-table-wrap">
+<table class="stock-table">
+<thead><tr><th>종목</th><th>상태</th><th class="num">등락률</th><th class="num">가격</th><th class="num">시가총액</th><th class="num">거래금액</th></tr></thead>
+<tbody>
+<tr><td><div>팔란티어 테크놀로지스</div><div class="mono muted-cell">PLTR</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-2.25%</span></td><td class="num mono">175.89</td><td class="num mono"><span class="num mono">$422.67B</span></td><td class="num mono"><span class="num mono">$6.16B</span></td></tr>
+<tr><td><div>오라클</div><div class="mono muted-cell">ORCL</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-2.74%</span></td><td class="num mono">142.45</td><td class="num mono"><span class="num mono">$410.32B</span></td><td class="num mono"><span class="num mono">$2.01B</span></td></tr>
+</tbody>
+</table>
+</div>
+</details><details class="group-item">
+<summary>
+  <span class="g-name">양자컴퓨터</span>
+  <span class="g-score mono">25.0</span>
+  <span class="g-label down">🔴 VERY_WEAK</span>
+  <span class="g-quality">PARTIAL</span>
+</summary>
+<div class="component-line">구성요소(0~100) — return_strength: 0.0 · traded_value_strength: 75.0 · breadth: 0.0 · core_leadership: 0.0 · catalyst: -</div>
+<div class="stock-table-wrap">
+<table class="stock-table">
+<thead><tr><th>종목</th><th>상태</th><th class="num">등락률</th><th class="num">가격</th><th class="num">시가총액</th><th class="num">거래금액</th></tr></thead>
+<tbody>
+<tr><td><div>아이온큐</div><div class="mono muted-cell">IONQ</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-8.47%</span></td><td class="num mono">41.06</td><td class="num mono"><span class="num mono">$16.63B</span></td><td class="num mono"><span class="num mono">$704.1M</span></td></tr>
+<tr><td><div>리게티 컴퓨팅</div><div class="mono muted-cell">RGTI</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-8.60%</span></td><td class="num mono">16.37</td><td class="num mono"><span class="num mono">$5.46B</span></td><td class="num mono"><span class="num mono">$354.0M</span></td></tr>
+<tr><td><div>D-웨이브 퀀텀</div><div class="mono muted-cell">QBTS</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-8.39%</span></td><td class="num mono">18.68</td><td class="num mono"><span class="num mono">$6.96B</span></td><td class="num mono"><span class="num mono">$319.0M</span></td></tr>
+</tbody>
+</table>
+</div>
+</details><details class="group-item">
+<summary>
+  <span class="g-name">전기차</span>
+  <span class="g-score mono">32.7</span>
+  <span class="g-label down">🔴 WEAK</span>
+  <span class="g-quality">PARTIAL</span>
+</summary>
+<div class="component-line">구성요소(0~100) — return_strength: 12.5 · traded_value_strength: 81.2 · breadth: 0.0 · core_leadership: 6.7 · catalyst: -</div>
+<div class="stock-table-wrap">
+<table class="stock-table">
+<thead><tr><th>종목</th><th>상태</th><th class="num">등락률</th><th class="num">가격</th><th class="num">시가총액</th><th class="num">거래금액</th></tr></thead>
+<tbody>
+<tr><td><div>테슬라</div><div class="mono muted-cell">TSLA</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-3.83%</span></td><td class="num mono">348.95</td><td class="num mono"><span class="num mono">$1,378.19B</span></td><td class="num mono"><span class="num mono">$13.62B</span></td></tr>
+<tr><td><div>리비안</div><div class="mono muted-cell">RIVN</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-2.18%</span></td><td class="num mono">16.60</td><td class="num mono"><span class="num mono">$24.03B</span></td><td class="num mono"><span class="num mono">$360.8M</span></td></tr>
+<tr><td><div>루시드 그룹</div><div class="mono muted-cell">LCID</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-7.62%</span></td><td class="num mono">5.09</td><td class="num mono"><span class="num mono">$2.01B</span></td><td class="num mono"><span class="num mono">$57.3M</span></td></tr>
+</tbody>
+</table>
+</div>
+</details><details class="group-item">
+<summary>
+  <span class="g-name">가상화폐</span>
+  <span class="g-score mono">70.0</span>
+  <span class="g-label up">🟢 STRONG</span>
+  <span class="g-quality">PARTIAL</span>
+</summary>
+<div class="component-line">구성요소(0~100) — return_strength: 62.5 · traded_value_strength: 93.8 · breadth: 20.0 · core_leadership: 100.0 · catalyst: -</div>
+<div class="stock-table-wrap">
+<table class="stock-table">
+<thead><tr><th>종목</th><th>상태</th><th class="num">등락률</th><th class="num">가격</th><th class="num">시가총액</th><th class="num">거래금액</th></tr></thead>
+<tbody>
+<tr><td><div>스트래티지(구 마이크로스트래티지)</div><div class="mono muted-cell">MSTR</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono up">+2.83%</span></td><td class="num mono">122.63</td><td class="num mono"><span class="num mono">$48.72B</span></td><td class="num mono"><span class="num mono">$5.03B</span></td></tr>
+<tr><td><div>마라 홀딩스</div><div class="mono muted-cell">MARA</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-0.71%</span></td><td class="num mono">11.18</td><td class="num mono"><span class="num mono">$4.32B</span></td><td class="num mono"><span class="num mono">$685.6M</span></td></tr>
+<tr><td><div>코인베이스</div><div class="mono muted-cell">COIN</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-3.76%</span></td><td class="num mono">179.48</td><td class="num mono"><span class="num mono">$47.35B</span></td><td class="num mono"><span class="num mono">$2.35B</span></td></tr>
+<tr><td><div>갤럭시 디지털</div><div class="mono muted-cell">GLXY</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-3.38%</span></td><td class="num mono">22.84</td><td class="num mono"><span class="num mono">$4.44B</span></td><td class="num mono"><span class="num mono">$108.0M</span></td></tr>
+<tr><td><div>서클 인터넷 그룹</div><div class="mono muted-cell">CRCL</div></td><td class="mono muted-cell">ACTUAL</td><td><span class="num mono down">-0.30%</span></td><td class="num mono">87.72</td><td class="num mono"><span class="num mono">$22.27B</span></td><td class="num mono"><span class="num mono">$1.52B</span></td></tr>
+</tbody>
+</table>
+</div>
+</details>
+  </div>
+</div>
+
+<footer>
+  <div>mapping_version 1.0.0 · model_version phase4-korea-expected-v1</div>
+  <div>이 스냅샷은 불변입니다 — 07:00 이후 동일 trade_date로 재계산되지 않습니다.</div>
+</footer>
